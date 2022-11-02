@@ -44,12 +44,12 @@ namespace SamecProject
                     pnlBody.Visible = true;
                 } else
                 {
-                    lblLoginError.Text = "Unable to find user ? ";
+                    lblLoginError.Text = "Invalid credentials ? Make sure to enter correct username and paswword ";
                     lblLoginError.Visible = true;
                 }
             } else
             {
-                lblLoginError.Text = "Invalid credentials ? ";
+                lblLoginError.Text = "Please enter username and password ? ";
                 lblLoginError.Visible = true;
             }
         }
