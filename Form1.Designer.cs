@@ -59,6 +59,7 @@ namespace SamecProject
             this.btnMember = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlMember = new System.Windows.Forms.Panel();
+            this.btnMemberPrint = new System.Windows.Forms.Button();
             this.btnMemberRefresh = new System.Windows.Forms.Button();
             this.btnMemberDelete = new System.Windows.Forms.Button();
             this.btnMemberEdit = new System.Windows.Forms.Button();
@@ -75,12 +76,11 @@ namespace SamecProject
             this.EmailAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHome = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tblMembersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pnlPayment = new System.Windows.Forms.Panel();
             this.pnlMaintenance = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pnlPayment = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnMemberPrint = new System.Windows.Forms.Button();
+            this.tblMembersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,9 +95,9 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.pnlHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).BeginInit();
-            this.pnlPayment.SuspendLayout();
             this.pnlMaintenance.SuspendLayout();
+            this.pnlPayment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -244,7 +244,7 @@ namespace SamecProject
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1047, 3);
+            this.pictureBox7.Location = new System.Drawing.Point(1045, 3);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(36, 33);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -395,6 +395,17 @@ namespace SamecProject
             this.pnlMember.Size = new System.Drawing.Size(1119, 465);
             this.pnlMember.TabIndex = 3;
             this.pnlMember.Visible = false;
+            // 
+            // btnMemberPrint
+            // 
+            this.btnMemberPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberPrint.Location = new System.Drawing.Point(1013, 159);
+            this.btnMemberPrint.Name = "btnMemberPrint";
+            this.btnMemberPrint.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberPrint.TabIndex = 5;
+            this.btnMemberPrint.Text = "Print";
+            this.btnMemberPrint.UseVisualStyleBackColor = false;
             // 
             // btnMemberRefresh
             // 
@@ -596,15 +607,6 @@ namespace SamecProject
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // pnlPayment
-            // 
-            this.pnlPayment.Controls.Add(this.label4);
-            this.pnlPayment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlPayment.Location = new System.Drawing.Point(10, 46);
-            this.pnlPayment.Name = "pnlPayment";
-            this.pnlPayment.Size = new System.Drawing.Size(1119, 465);
-            this.pnlPayment.TabIndex = 4;
-            // 
             // pnlMaintenance
             // 
             this.pnlMaintenance.Controls.Add(this.label3);
@@ -624,6 +626,15 @@ namespace SamecProject
             this.label3.TabIndex = 0;
             this.label3.Text = "Panel Maintenance Code Here";
             // 
+            // pnlPayment
+            // 
+            this.pnlPayment.Controls.Add(this.label4);
+            this.pnlPayment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlPayment.Location = new System.Drawing.Point(10, 46);
+            this.pnlPayment.Name = "pnlPayment";
+            this.pnlPayment.Size = new System.Drawing.Size(1119, 465);
+            this.pnlPayment.TabIndex = 4;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -632,17 +643,6 @@ namespace SamecProject
             this.label4.Size = new System.Drawing.Size(235, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "Payment Object Design Here";
-            // 
-            // btnMemberPrint
-            // 
-            this.btnMemberPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnMemberPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemberPrint.Location = new System.Drawing.Point(1013, 159);
-            this.btnMemberPrint.Name = "btnMemberPrint";
-            this.btnMemberPrint.Size = new System.Drawing.Size(94, 30);
-            this.btnMemberPrint.TabIndex = 5;
-            this.btnMemberPrint.Text = "Print";
-            this.btnMemberPrint.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
@@ -678,11 +678,11 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.pnlHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).EndInit();
-            this.pnlPayment.ResumeLayout(false);
-            this.pnlPayment.PerformLayout();
             this.pnlMaintenance.ResumeLayout(false);
             this.pnlMaintenance.PerformLayout();
+            this.pnlPayment.ResumeLayout(false);
+            this.pnlPayment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
