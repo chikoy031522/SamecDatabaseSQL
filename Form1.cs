@@ -14,26 +14,16 @@ using System.IO;
 namespace SamecProject
 {    
     public partial class frmMain : Form
-    {
-
-        public static string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;        
-        
+    {                        
         public frmMain()
         {
             InitializeComponent();
+            
         }
 
         private void frmMain_Load(object sender, EventArgs e)
-        {            
-            if (File.Exists("DefaultUser.txt"))
-            {
-                using (StreamReader strReader = new StreamReader("DefaultUser.txt"))
-                {
-                    txtUsername.Text = strReader.ReadLine();
-                    txtPassword.Focus();
-
-                }
-            }
+        {
+            SQLStringConnect();           
         }
       
         private void btnLogin_Click(object sender, EventArgs e)
@@ -67,7 +57,7 @@ namespace SamecProject
         private bool ValidateUser(string username, string userpassword)
         {
             bool isUserExist = false;
-            using (SqlConnection sqlConn = new SqlConnection(strConn))
+            using (SqlConnection sqlConn = new SqlConnection(Program.sqlconnectstring))
             {
                 SqlCommand cmd = new SqlCommand("CheckUserExist");
                 cmd.Parameters.AddWithValue("@UserName", username);
@@ -134,7 +124,7 @@ namespace SamecProject
 
         public void btnMemberRefresh_Click(object sender, EventArgs e)
         {
-            using(SqlConnection conn = new SqlConnection(strConn))
+            using(SqlConnection conn = new SqlConnection(Program.sqlconnectstring))
             {
                 SqlCommand cmd = new SqlCommand("GetMembers");
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -181,7 +171,7 @@ namespace SamecProject
                 DialogResult strRes = MessageBox.Show("Are you sure you want to delete this member ?", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (strRes == DialogResult.OK)
                 {
-                    using (SqlConnection conn = new SqlConnection(strConn))
+                    using (SqlConnection conn = new SqlConnection(Program.sqlconnectstring))
                     {
                         SqlCommand cmd = new SqlCommand("DeleteMember");
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -206,6 +196,31 @@ namespace SamecProject
         private void btnMaintenance_Click(object sender, EventArgs e)
         {
             pnlMaintenance.BringToFront();
+        }
+
+        public void SQLStringConnect()
+        {
+            if (File.Exists("databasename.txt"))
+            {
+                using (StreamReader strReader = new StreamReader("databasename.txt"))
+                {
+                    string dbname = strReader.ReadLine();
+                    string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
+                    Program.sqlconnectstring = strConn.Replace("databasename", dbname);
+                }
+            } else
+            {
+                MessageBox.Show("Create a text for the database name to properly connect to SQL and run the app ?", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (File.Exists("DefaultUser.txt"))
+            {
+                using (StreamReader strReader = new StreamReader("DefaultUser.txt"))
+                {
+                    txtUsername.Text = strReader.ReadLine();
+                    txtPassword.Focus();
+
+                }
+            }            
         }
     }
 }
