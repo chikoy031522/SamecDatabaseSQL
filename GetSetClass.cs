@@ -11,8 +11,7 @@ namespace SamecProject
         static string mid,mln,mfn, mmn, mbd, mbp, mdd, mtl,mea;
         public static string memid { get { return mid; } set { mid = value; } }
         public static string memlname { get { return mln; } set { mln = value; } }
-        public static string memfname { get { return mfn; } set { mfn = value; } }
-       
+        public static string memfname { get { return mfn; } set { mfn = value; } }       
         public static string memmname { get { return mmn; } set { mmn = value; } }
         public static string membd { get { return mbd; } set { mbd = value; } }
         public static string membp { get { return mbp; } set { mbp = value; } }
