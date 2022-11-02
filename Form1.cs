@@ -200,13 +200,13 @@ namespace SamecProject
 
         public void SQLStringConnect()
         {
-            if (File.Exists("databasename.txt"))
+            if (File.Exists("servername.txt"))
             {
-                using (StreamReader strReader = new StreamReader("databasename.txt"))
+                using (StreamReader strReader = new StreamReader("servername.txt"))
                 {
                     string dbname = strReader.ReadLine();
                     string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
-                    Program.sqlconnectstring = strConn.Replace("databasename", dbname);
+                    Program.sqlconnectstring = strConn.Replace("servername", dbname);
                 }
             } else
             {
