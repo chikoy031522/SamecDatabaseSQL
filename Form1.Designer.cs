@@ -74,8 +74,13 @@ namespace SamecProject
             this.Inductiondate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHome = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();            
-            this.tblMembersBindingSource = new System.Windows.Forms.BindingSource(this.components);            
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tblMembersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pnlPayment = new System.Windows.Forms.Panel();
+            this.pnlMaintenance = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnMemberPrint = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,8 +94,10 @@ namespace SamecProject
             this.pnlMember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.pnlHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();            
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).BeginInit();
+            this.pnlPayment.SuspendLayout();
+            this.pnlMaintenance.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -211,6 +218,8 @@ namespace SamecProject
             this.pnlBody.Controls.Add(this.pnlMenu);
             this.pnlBody.Controls.Add(this.pnlMember);
             this.pnlBody.Controls.Add(this.pnlHome);
+            this.pnlBody.Controls.Add(this.pnlMaintenance);
+            this.pnlBody.Controls.Add(this.pnlPayment);
             this.pnlBody.Location = new System.Drawing.Point(-4, 240);
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(1132, 556);
@@ -331,6 +340,7 @@ namespace SamecProject
             this.btnMaintenance.TabIndex = 3;
             this.btnMaintenance.Text = "Maintenance";
             this.btnMaintenance.UseVisualStyleBackColor = true;
+            this.btnMaintenance.Click += new System.EventHandler(this.btnMaintenance_Click);
             // 
             // btnPayment
             // 
@@ -343,6 +353,7 @@ namespace SamecProject
             this.btnPayment.TabIndex = 2;
             this.btnPayment.Text = "Payment";
             this.btnPayment.UseVisualStyleBackColor = true;
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // btnMember
             // 
@@ -372,6 +383,7 @@ namespace SamecProject
             // 
             // pnlMember
             // 
+            this.pnlMember.Controls.Add(this.btnMemberPrint);
             this.pnlMember.Controls.Add(this.btnMemberRefresh);
             this.pnlMember.Controls.Add(this.btnMemberDelete);
             this.pnlMember.Controls.Add(this.btnMemberEdit);
@@ -583,7 +595,54 @@ namespace SamecProject
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            //                                     
+            // 
+            // pnlPayment
+            // 
+            this.pnlPayment.Controls.Add(this.label4);
+            this.pnlPayment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlPayment.Location = new System.Drawing.Point(10, 46);
+            this.pnlPayment.Name = "pnlPayment";
+            this.pnlPayment.Size = new System.Drawing.Size(1119, 465);
+            this.pnlPayment.TabIndex = 4;
+            // 
+            // pnlMaintenance
+            // 
+            this.pnlMaintenance.Controls.Add(this.label3);
+            this.pnlMaintenance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlMaintenance.Location = new System.Drawing.Point(10, 45);
+            this.pnlMaintenance.Name = "pnlMaintenance";
+            this.pnlMaintenance.Size = new System.Drawing.Size(1119, 465);
+            this.pnlMaintenance.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(419, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(252, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Panel Maintenance Code Here";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(425, 205);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(235, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Payment Object Design Here";
+            // 
+            // btnMemberPrint
+            // 
+            this.btnMemberPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberPrint.Location = new System.Drawing.Point(1013, 159);
+            this.btnMemberPrint.Name = "btnMemberPrint";
+            this.btnMemberPrint.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberPrint.TabIndex = 5;
+            this.btnMemberPrint.Text = "Print";
+            this.btnMemberPrint.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
@@ -618,8 +677,12 @@ namespace SamecProject
             this.pnlMember.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.pnlHome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();            
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).EndInit();
+            this.pnlPayment.ResumeLayout(false);
+            this.pnlPayment.PerformLayout();
+            this.pnlMaintenance.ResumeLayout(false);
+            this.pnlMaintenance.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -667,6 +730,11 @@ namespace SamecProject
         private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Inductiondate;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmailAddress;
+        private System.Windows.Forms.Panel pnlPayment;
+        private System.Windows.Forms.Panel pnlMaintenance;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnMemberPrint;
     }
 }
 

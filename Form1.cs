@@ -197,5 +197,15 @@ namespace SamecProject
             }
 
         }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            pnlPayment.BringToFront();
+        }
+
+        private void btnMaintenance_Click(object sender, EventArgs e)
+        {
+            pnlMaintenance.BringToFront();
+        }
     }
 }
