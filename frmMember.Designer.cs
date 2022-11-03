@@ -31,8 +31,8 @@ namespace SamecProject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMember));
             this.grpMember = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtMemberTelephone = new System.Windows.Forms.TextBox();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMemberEmail = new System.Windows.Forms.TextBox();
             this.txtMemberInductiondate = new System.Windows.Forms.MaskedTextBox();
@@ -49,9 +49,9 @@ namespace SamecProject
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtMemberID = new System.Windows.Forms.TextBox();
             this.btnMemberSave = new System.Windows.Forms.Button();
             this.btnMemberCancel = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.grpMember.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,16 @@ namespace SamecProject
             this.grpMember.TabIndex = 0;
             this.grpMember.TabStop = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(40, 29);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(91, 16);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Member ID : ";
+            // 
             // txtMemberTelephone
             // 
             this.txtMemberTelephone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -95,18 +105,6 @@ namespace SamecProject
             this.txtMemberTelephone.Size = new System.Drawing.Size(205, 27);
             this.txtMemberTelephone.TabIndex = 21;
             this.txtMemberTelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtMemberID
-            // 
-            this.txtMemberID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMemberID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberID.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtMemberID.Location = new System.Drawing.Point(135, 23);
-            this.txtMemberID.MaxLength = 20;
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(205, 27);
-            this.txtMemberID.TabIndex = 20;
-            this.txtMemberID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -285,6 +283,20 @@ namespace SamecProject
             this.label1.TabIndex = 2;
             this.label1.Text = "Lastname : ";
             // 
+            // txtMemberID
+            // 
+            this.txtMemberID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMemberID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMemberID.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtMemberID.Location = new System.Drawing.Point(135, 23);
+            this.txtMemberID.MaxLength = 8;
+            this.txtMemberID.Name = "txtMemberID";
+            this.txtMemberID.Size = new System.Drawing.Size(205, 27);
+            this.txtMemberID.TabIndex = 9;
+            this.txtMemberID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMemberID.TextChanged += new System.EventHandler(this.txtMemberID_TextChanged);
+            this.txtMemberID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMemberID_KeyPress);
+            // 
             // btnMemberSave
             // 
             this.btnMemberSave.BackColor = System.Drawing.Color.SteelBlue;
@@ -312,16 +324,6 @@ namespace SamecProject
             this.btnMemberCancel.Text = "Cancel";
             this.btnMemberCancel.UseVisualStyleBackColor = false;
             this.btnMemberCancel.Click += new System.EventHandler(this.btnMemberCancel_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(42, 29);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 16);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "MemberID : ";
             // 
             // frmMember
             // 
@@ -369,8 +371,8 @@ namespace SamecProject
         private System.Windows.Forms.MaskedTextBox txtMemberInductiondate;
         private System.Windows.Forms.MaskedTextBox txtMemberBirthdate;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtMemberID;
         private System.Windows.Forms.TextBox txtMemberTelephone;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtMemberID;
     }
 }

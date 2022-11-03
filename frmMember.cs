@@ -25,12 +25,12 @@ namespace SamecProject
 
         private void btnMemberSave_Click(object sender, EventArgs e)
         {
-            if (txtMemberFirstname.Text != "" && txtMemberLastName.Text != "")
+            if (txtMemberID.Text != "")
             {
                 AddUpdateMember();                
             } else
             {
-                MessageBox.Show("Be sure to provide Firstname and Lastname ? ", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Be sure to provide Member ID ? ", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -80,6 +80,14 @@ namespace SamecProject
             txtMemberInductiondate.Text = GetSetClass.meminid;
             txtMemberEmail.Text = GetSetClass.memea;
         }
-        
+        private void txtMemberID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txtMemberID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
