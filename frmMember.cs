@@ -36,8 +36,8 @@ namespace SamecProject
 
         private void AddUpdateMember()
         {
-            string conn = Program.sqlconnectstring;            
-            string uname = Program.globalString;
+            string conn = GetSetClass.sqlconnectstring;            
+            string uname = GetSetClass.globalString;
             string BDate = (txtMemberBirthdate.Text.Length == 10) ? txtMemberBirthdate.Text : "" ;
             string IDate = (txtMemberInductiondate.Text.Length == 10) ? txtMemberInductiondate.Text : "";            
             int mID = string.IsNullOrEmpty(txtMemberID.Text) ? 0 : int.Parse(txtMemberID.Text);            

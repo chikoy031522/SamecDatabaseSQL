@@ -8,7 +8,7 @@ namespace SamecProject
 {
     class GetSetClass
     {
-        static string mid,mln,mfn, mmn, mbd, mbp, mdd, mtl,mea;
+        static string mid,mln,mfn, mmn, mbd, mbp, mdd, mtl,mea, gs, sqlc;
         public static string memid { get { return mid; } set { mid = value; } }
         public static string memlname { get { return mln; } set { mln = value; } }
         public static string memfname { get { return mfn; } set { mfn = value; } }       
@@ -18,5 +18,8 @@ namespace SamecProject
         public static string meminid { get { return mdd; } set { mdd = value; } }
         public static string memtel { get { return mtl; } set { mtl = value; } }
         public static string memea { get { return mea; } set { mea = value; } }
+        public static string globalString { get { return gs; } set { gs = value; } }
+        public static string sqlconnectstring { get { return sqlc; } set { sqlc = value; } }
+
     }
 }

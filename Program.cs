@@ -7,9 +7,7 @@ using System.Windows.Forms;
 namespace SamecProject
 {
     static class Program
-    {
-        public static string globalString = "";
-        public static string sqlconnectstring = "";
+    {        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

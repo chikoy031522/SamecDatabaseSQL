@@ -14,7 +14,8 @@ using System.IO;
 namespace SamecProject
 {    
     public partial class frmMain : Form
-    {                        
+    {
+        public string SQLConnStr = GetSetClass.sqlconnectstring;
         public frmMain()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace SamecProject
                     }
                     lblUsernameLogin.Text = txtUsername.Text;                    
                     txtPassword.Text = "";
-                    Program.globalString = txtUsername.Text;
+                    GetSetClass.globalString = txtUsername.Text;
                     btnHome_Click(sender,e);
                     pnlBody.Visible = true;
                 } else
@@ -57,7 +58,7 @@ namespace SamecProject
         private bool ValidateUser(string username, string userpassword)
         {
             bool isUserExist = false;
-            using (SqlConnection sqlConn = new SqlConnection(Program.sqlconnectstring))
+            using (SqlConnection sqlConn = new SqlConnection(SQLConnStr))
             {
                 SqlCommand cmd = new SqlCommand("CheckUserExist");
                 cmd.Parameters.AddWithValue("@UserName", username);
@@ -124,7 +125,7 @@ namespace SamecProject
 
         public void btnMemberRefresh_Click(object sender, EventArgs e)
         {
-            using(SqlConnection conn = new SqlConnection(Program.sqlconnectstring))
+            using(SqlConnection conn = new SqlConnection(SQLConnStr))
             {
                 SqlCommand cmd = new SqlCommand("GetMembers");
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -171,7 +172,7 @@ namespace SamecProject
                 DialogResult strRes = MessageBox.Show("Are you sure you want to delete this member ?", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (strRes == DialogResult.OK)
                 {
-                    using (SqlConnection conn = new SqlConnection(Program.sqlconnectstring))
+                    using (SqlConnection conn = new SqlConnection(SQLConnStrg))
                     {
                         SqlCommand cmd = new SqlCommand("DeleteMember");
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -206,7 +207,7 @@ namespace SamecProject
                 {
                     string dbname = strReader.ReadLine();
                     string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
-                    Program.sqlconnectstring = strConn.Replace("servername", dbname);
+                    GetSetClass.sqlconnectstring = strConn.Replace("servername", dbname);
                 }
             } else
             {
