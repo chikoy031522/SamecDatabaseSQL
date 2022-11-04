@@ -9,13 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace SamecProject
 {
     public partial class frmPayment : Form
     {
+        private string Iid;
         public frmPayment()
         {
             InitializeComponent();
+        }
+
+        public frmPayment(string initid)
+        {
+            InitializeComponent();
+            Iid = initid;
         }
 
         private void frmPayment_Load(object sender, EventArgs e)
@@ -27,7 +35,49 @@ namespace SamecProject
             {
                 cmbYears.Items.Add(i);
             }
+            if (!string.IsNullOrEmpty(Iid))
+            {
+                txtMemberID.Enabled = false;
+                lblRedText.Visible = false;
+                txtMemberID.BackColor = Color.FromName("Info");
+                GetPayment(Iid);
+            }            
+        }
 
+        private void GetPayment(string payid)
+        {
+            using (SqlConnection conn = new SqlConnection(GetSetClass.sqlconnectstring))
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("GetPayment", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@PaymentID", payid);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    conn.Open();
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "tblPayment");
+                    conn.Close();
+                    InitializePaymentData(ds);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error");
+                }
+            }
+        }
+
+        private void InitializePaymentData(DataSet ds)
+        {
+            txtPaymentID.Text = ds.Tables[0].Rows[0][0].ToString();
+            txtMemberID.Text = ds.Tables[0].Rows[0][1].ToString();
+            txtMemberLastName.Text = ds.Tables[0].Rows[0][2].ToString();
+            txtMemberFirstname.Text = ds.Tables[0].Rows[0][3].ToString();
+            cmbYears.Text = ds.Tables[0].Rows[0][4].ToString();
+            cmbMonths.Text = ds.Tables[0].Rows[0][5].ToString();
+            txtPaymentAmount.Text = ds.Tables[0].Rows[0][6].ToString();
+            dtpPaymentDate.Text = ds.Tables[0].Rows[0][7].ToString();
+            cmbPaymentType.Text = ds.Tables[0].Rows[0][8].ToString();
         }
 
         private void GetPaymentType()
@@ -120,7 +170,7 @@ namespace SamecProject
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@PaymentID", txtPaymentID.Text);
                         cmd.Parameters.AddWithValue("@MemberID", txtMemberID.Text);                       
-                        cmd.Parameters.AddWithValue("@PaymentTypeID", cmbPaymentType.SelectedValue);
+                        cmd.Parameters.AddWithValue("@PaymentTypeID", cmbPaymentType.SelectedValue.ToString());
                         cmd.Parameters.AddWithValue("@PaymentMonth", (cmbMonths.SelectedIndex + 1).ToString());
                         cmd.Parameters.AddWithValue("@PaymentAmount", txtPaymentAmount.Text);
                         cmd.Parameters.AddWithValue("@PaymentYear", cmbYears.Text);

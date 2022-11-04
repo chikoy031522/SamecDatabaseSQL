@@ -35,7 +35,7 @@ namespace SamecProject
             this.cmbMonths = new System.Windows.Forms.ComboBox();
             this.cmbPaymentType = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblRedText = new System.Windows.Forms.Label();
             this.txtPaymentAmount = new System.Windows.Forms.TextBox();
             this.txtMemberFirstname = new System.Windows.Forms.TextBox();
             this.txtMemberLastName = new System.Windows.Forms.TextBox();
@@ -61,7 +61,7 @@ namespace SamecProject
             this.grpMember.Controls.Add(this.cmbMonths);
             this.grpMember.Controls.Add(this.cmbPaymentType);
             this.grpMember.Controls.Add(this.label11);
-            this.grpMember.Controls.Add(this.label9);
+            this.grpMember.Controls.Add(this.lblRedText);
             this.grpMember.Controls.Add(this.txtPaymentAmount);
             this.grpMember.Controls.Add(this.txtMemberFirstname);
             this.grpMember.Controls.Add(this.txtMemberLastName);
@@ -125,22 +125,22 @@ namespace SamecProject
             this.label11.TabIndex = 22;
             this.label11.Text = "Member ID : ";
             // 
-            // label9
+            // lblRedText
             // 
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(318, 44);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 16);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "*";
+            this.lblRedText.BackColor = System.Drawing.Color.White;
+            this.lblRedText.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRedText.ForeColor = System.Drawing.Color.Red;
+            this.lblRedText.Location = new System.Drawing.Point(318, 44);
+            this.lblRedText.Name = "lblRedText";
+            this.lblRedText.Size = new System.Drawing.Size(18, 16);
+            this.lblRedText.TabIndex = 18;
+            this.lblRedText.Text = "*";
             // 
             // txtPaymentAmount
             // 
             this.txtPaymentAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPaymentAmount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaymentAmount.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtPaymentAmount.ForeColor = System.Drawing.Color.Black;
             this.txtPaymentAmount.Location = new System.Drawing.Point(135, 256);
             this.txtPaymentAmount.MaxLength = 50;
             this.txtPaymentAmount.Name = "txtPaymentAmount";
@@ -255,7 +255,7 @@ namespace SamecProject
             // 
             this.txtMemberID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMemberID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberID.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtMemberID.ForeColor = System.Drawing.Color.Black;
             this.txtMemberID.Location = new System.Drawing.Point(135, 38);
             this.txtMemberID.MaxLength = 8;
             this.txtMemberID.Name = "txtMemberID";
@@ -326,7 +326,7 @@ namespace SamecProject
 
         private System.Windows.Forms.GroupBox grpMember;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblRedText;
         private System.Windows.Forms.TextBox txtPaymentAmount;
         private System.Windows.Forms.TextBox txtMemberFirstname;
         private System.Windows.Forms.TextBox txtMemberLastName;

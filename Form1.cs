@@ -101,7 +101,7 @@ namespace SamecProject
 
         private void btnMember_Click(object sender, EventArgs e)
         {
-            btnMemberRefresh_Click(sender,e);
+            btnMemberRefresh_Click(sender, e);
             pnlMember.Visible = true;            
             pnlMember.BringToFront();
         }
@@ -192,6 +192,8 @@ namespace SamecProject
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
+            btnPaymentRefresh_Click(sender, e);
+            pnlPayment.Visible = true;            
             pnlPayment.BringToFront();
         }
 
@@ -259,7 +261,9 @@ namespace SamecProject
         {
             if(dgvPayments.SelectedRows.Count > 0)
             {
-
+                string payID = dgvPayments.SelectedRows[0].Cells[0].Value.ToString();
+                frmPayment frp = new frmPayment(payID);                
+                frp.ShowDialog();
             }
         }
     }
