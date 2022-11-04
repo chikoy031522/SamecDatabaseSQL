@@ -34,16 +34,16 @@ namespace SamecProject
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPaymentType));
-            this.dgvPaymentData = new System.Windows.Forms.DataGridView();
+            this.dgvPaymentType = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PaymentTypeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentType)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvPaymentData
+            // dgvPaymentType
             // 
-            this.dgvPaymentData.BackgroundColor = System.Drawing.Color.White;
-            this.dgvPaymentData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvPaymentType.BackgroundColor = System.Drawing.Color.White;
+            this.dgvPaymentType.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -51,10 +51,10 @@ namespace SamecProject
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPaymentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPaymentData.ColumnHeadersHeight = 30;
-            this.dgvPaymentData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvPaymentData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPaymentType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPaymentType.ColumnHeadersHeight = 30;
+            this.dgvPaymentType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPaymentType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.PaymentTypeID});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -64,12 +64,12 @@ namespace SamecProject
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Yellow;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPaymentData.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPaymentData.EnableHeadersVisualStyles = false;
-            this.dgvPaymentData.GridColor = System.Drawing.Color.White;
-            this.dgvPaymentData.Location = new System.Drawing.Point(12, 12);
-            this.dgvPaymentData.Name = "dgvPaymentData";
-            this.dgvPaymentData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvPaymentType.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPaymentType.EnableHeadersVisualStyles = false;
+            this.dgvPaymentType.GridColor = System.Drawing.Color.White;
+            this.dgvPaymentType.Location = new System.Drawing.Point(12, 12);
+            this.dgvPaymentType.Name = "dgvPaymentType";
+            this.dgvPaymentType.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,11 +77,11 @@ namespace SamecProject
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPaymentData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvPaymentData.RowHeadersVisible = false;
-            this.dgvPaymentData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPaymentData.Size = new System.Drawing.Size(375, 298);
-            this.dgvPaymentData.TabIndex = 7;
+            this.dgvPaymentType.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPaymentType.RowHeadersVisible = false;
+            this.dgvPaymentType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPaymentType.Size = new System.Drawing.Size(375, 298);
+            this.dgvPaymentType.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -99,8 +99,10 @@ namespace SamecProject
             // 
             // PaymentTypeID
             // 
+            this.PaymentTypeID.DataPropertyName = "PaymentTypeID";
             this.PaymentTypeID.HeaderText = "PaymentTypeID";
             this.PaymentTypeID.Name = "PaymentTypeID";
+            this.PaymentTypeID.ReadOnly = true;
             this.PaymentTypeID.Visible = false;
             // 
             // frmPaymentType
@@ -109,7 +111,7 @@ namespace SamecProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(399, 322);
-            this.Controls.Add(this.dgvPaymentData);
+            this.Controls.Add(this.dgvPaymentType);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -119,14 +121,14 @@ namespace SamecProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment Type";
             this.Load += new System.EventHandler(this.frmPaymentType_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentType)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvPaymentData;
+        private System.Windows.Forms.DataGridView dgvPaymentType;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentTypeID;
     }
