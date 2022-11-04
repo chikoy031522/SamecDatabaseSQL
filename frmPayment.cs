@@ -113,17 +113,24 @@ namespace SamecProject
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("AddUpdatePayment", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@MemberID", memid);
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    conn.Open();
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "tblMember");
-                    conn.Close();
-                    txtMemberFirstname.Text = ds.Tables["tblMember"].Rows[0]["Firstname"].ToString();
-                    txtMemberLastName.Text = ds.Tables["tblMember"].Rows[0]["Lastname"].ToString();
-                    cmbPaymentType.Focus();
+                    using (SqlConnection sqlc = new SqlConnection(GetSetClass.sqlconnectstring))
+                    {
+                        SqlCommand cmd = new SqlCommand("AddUpdatePayment");
+                        cmd.Connection = sqlc;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@PaymentID", txtPaymentID.Text);
+                        cmd.Parameters.AddWithValue("@MemberID", txtMemberID.Text);                       
+                        cmd.Parameters.AddWithValue("@PaymentTypeID", cmbPaymentType.SelectedValue);
+                        cmd.Parameters.AddWithValue("@PaymentMonth", (cmbMonths.SelectedIndex + 1).ToString());
+                        cmd.Parameters.AddWithValue("@PaymentAmount", txtPaymentAmount.Text);
+                        cmd.Parameters.AddWithValue("@PaymentYear", cmbYears.Text);
+                        cmd.Parameters.AddWithValue("@Paymentdate", dtpPaymentDate.Text);                        
+                        cmd.Parameters.AddWithValue("@UserName", GetSetClass.globalString);
+                        sqlc.Open();
+                        cmd.ExecuteNonQuery();
+                        sqlc.Close();
+                    }
+                    this.Hide();
                 }
                 catch (Exception ex)
                 {

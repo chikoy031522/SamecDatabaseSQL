@@ -21,5 +21,7 @@ namespace SamecProject
         public static string globalString { get { return gs; } set { gs = value; } }
         public static string sqlconnectstring { get { return sqlc; } set { sqlc = value; } }
 
+        public static string payid { get; set; }        
+
     }
 }

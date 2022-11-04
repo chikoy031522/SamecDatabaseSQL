@@ -237,5 +237,30 @@ namespace SamecProject
             frmPayment frmP = new frmPayment();
             frmP.ShowDialog();
         }
+
+        private void btnPaymentRefresh_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(SQLConnStr))
+            {
+                SqlCommand cmd = new SqlCommand("GetPayments");
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = conn;
+                conn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+                conn.Close();
+                dgvPayments.ReadOnly = true;
+                dgvPayments.DataSource = ds.Tables[0];
+            }
+        }
+
+        private void btnPaymentEdit_Click(object sender, EventArgs e)
+        {
+            if(dgvPayments.SelectedRows.Count > 0)
+            {
+
+            }
+        }
     }
 }
