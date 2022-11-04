@@ -84,10 +84,6 @@ namespace SamecProject
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
-
-        private void txtMemberID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

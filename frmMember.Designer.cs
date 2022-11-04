@@ -293,8 +293,7 @@ namespace SamecProject
             this.txtMemberID.Name = "txtMemberID";
             this.txtMemberID.Size = new System.Drawing.Size(205, 27);
             this.txtMemberID.TabIndex = 9;
-            this.txtMemberID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtMemberID.TextChanged += new System.EventHandler(this.txtMemberID_TextChanged);
+            this.txtMemberID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;            
             this.txtMemberID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMemberID_KeyPress);
             // 
             // btnMemberSave

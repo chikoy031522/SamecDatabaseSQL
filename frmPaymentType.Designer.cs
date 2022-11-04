@@ -65,7 +65,7 @@ namespace SamecProject
             this.dgvPaymentType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.PaymentTypeID});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -88,11 +88,11 @@ namespace SamecProject
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPaymentType.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPaymentType.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPaymentType.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvPaymentType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPaymentType.Size = new System.Drawing.Size(337, 298);
+            this.dgvPaymentType.Size = new System.Drawing.Size(269, 265);
             this.dgvPaymentType.TabIndex = 7;
             this.dgvPaymentType.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPaymentType_CellContentClick);
             this.dgvPaymentType.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPaymentType_CellContentClick);
@@ -128,7 +128,7 @@ namespace SamecProject
             this.txtPaymentTypeDesc.Location = new System.Drawing.Point(12, 12);
             this.txtPaymentTypeDesc.MaxLength = 20;
             this.txtPaymentTypeDesc.Name = "txtPaymentTypeDesc";
-            this.txtPaymentTypeDesc.Size = new System.Drawing.Size(337, 27);
+            this.txtPaymentTypeDesc.Size = new System.Drawing.Size(269, 27);
             this.txtPaymentTypeDesc.TabIndex = 11;
             this.txtPaymentTypeDesc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -138,9 +138,9 @@ namespace SamecProject
             this.btnPaymentTypeSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPaymentTypeSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaymentTypeSave.ForeColor = System.Drawing.Color.White;
-            this.btnPaymentTypeSave.Location = new System.Drawing.Point(61, 349);
+            this.btnPaymentTypeSave.Location = new System.Drawing.Point(32, 327);
             this.btnPaymentTypeSave.Name = "btnPaymentTypeSave";
-            this.btnPaymentTypeSave.Size = new System.Drawing.Size(94, 28);
+            this.btnPaymentTypeSave.Size = new System.Drawing.Size(74, 28);
             this.btnPaymentTypeSave.TabIndex = 19;
             this.btnPaymentTypeSave.Text = "Save";
             this.btnPaymentTypeSave.UseVisualStyleBackColor = false;
@@ -152,9 +152,9 @@ namespace SamecProject
             this.btnPaymentTypeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPaymentTypeDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaymentTypeDelete.ForeColor = System.Drawing.Color.White;
-            this.btnPaymentTypeDelete.Location = new System.Drawing.Point(255, 349);
+            this.btnPaymentTypeDelete.Location = new System.Drawing.Point(188, 327);
             this.btnPaymentTypeDelete.Name = "btnPaymentTypeDelete";
-            this.btnPaymentTypeDelete.Size = new System.Drawing.Size(94, 28);
+            this.btnPaymentTypeDelete.Size = new System.Drawing.Size(69, 28);
             this.btnPaymentTypeDelete.TabIndex = 20;
             this.btnPaymentTypeDelete.Text = "Delete";
             this.btnPaymentTypeDelete.UseVisualStyleBackColor = false;
@@ -166,9 +166,9 @@ namespace SamecProject
             this.btnPaymentTypeUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPaymentTypeUpdate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaymentTypeUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnPaymentTypeUpdate.Location = new System.Drawing.Point(158, 349);
+            this.btnPaymentTypeUpdate.Location = new System.Drawing.Point(112, 327);
             this.btnPaymentTypeUpdate.Name = "btnPaymentTypeUpdate";
-            this.btnPaymentTypeUpdate.Size = new System.Drawing.Size(94, 28);
+            this.btnPaymentTypeUpdate.Size = new System.Drawing.Size(70, 28);
             this.btnPaymentTypeUpdate.TabIndex = 21;
             this.btnPaymentTypeUpdate.Text = "Update";
             this.btnPaymentTypeUpdate.UseVisualStyleBackColor = false;
@@ -179,13 +179,14 @@ namespace SamecProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(362, 384);
+            this.ClientSize = new System.Drawing.Size(297, 376);
             this.Controls.Add(this.btnPaymentTypeUpdate);
             this.Controls.Add(this.btnPaymentTypeDelete);
             this.Controls.Add(this.btnPaymentTypeSave);
             this.Controls.Add(this.txtPaymentTypeDesc);
             this.Controls.Add(this.dgvPaymentType);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -203,11 +204,11 @@ namespace SamecProject
         #endregion
 
         private System.Windows.Forms.DataGridView dgvPaymentType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentTypeID;
         private System.Windows.Forms.TextBox txtPaymentTypeDesc;
         private System.Windows.Forms.Button btnPaymentTypeSave;
         private System.Windows.Forms.Button btnPaymentTypeDelete;
         private System.Windows.Forms.Button btnPaymentTypeUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentTypeID;
     }
 }
