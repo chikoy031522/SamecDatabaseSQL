@@ -21,6 +21,7 @@ namespace SamecProject
         private void frmPaymentType_Load(object sender, EventArgs e)
         {
             GetActivePaymentType();
+            MessageBox.Show("Pull Test Chris PC");
         }
 
         private void GetActivePaymentType()
