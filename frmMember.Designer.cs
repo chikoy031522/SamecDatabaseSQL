@@ -103,7 +103,7 @@ namespace SamecProject
             this.txtMemberTelephone.MaxLength = 50;
             this.txtMemberTelephone.Name = "txtMemberTelephone";
             this.txtMemberTelephone.Size = new System.Drawing.Size(205, 27);
-            this.txtMemberTelephone.TabIndex = 21;
+            this.txtMemberTelephone.TabIndex = 15;
             this.txtMemberTelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9

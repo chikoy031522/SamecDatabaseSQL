@@ -15,16 +15,17 @@ namespace SamecProject
 {    
     public partial class frmMain : Form
     {
-        public string SQLConnStr = GetSetClass.sqlconnectstring;
+
+        public string SQLConnStr = "";
         public frmMain()
         {
             InitializeComponent();
-            
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            SQLStringConnect();           
+            SQLStringConnect();
+            
         }
       
         private void btnLogin_Click(object sender, EventArgs e)
@@ -172,7 +173,7 @@ namespace SamecProject
                 DialogResult strRes = MessageBox.Show("Are you sure you want to delete this member ?", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (strRes == DialogResult.OK)
                 {
-                    using (SqlConnection conn = new SqlConnection(SQLConnStrg))
+                    using (SqlConnection conn = new SqlConnection(SQLConnStr))
                     {
                         SqlCommand cmd = new SqlCommand("DeleteMember");
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -208,6 +209,7 @@ namespace SamecProject
                     string dbname = strReader.ReadLine();
                     string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
                     GetSetClass.sqlconnectstring = strConn.Replace("servername", dbname);
+                    SQLConnStr = GetSetClass.sqlconnectstring;
                 }
             } else
             {
@@ -222,6 +224,12 @@ namespace SamecProject
 
                 }
             }            
+        }
+
+        private void btnPaymentType_Click(object sender, EventArgs e)
+        {
+            frmPaymentType fpt = new frmPaymentType();
+            fpt.ShowDialog();
         }
     }
 }
