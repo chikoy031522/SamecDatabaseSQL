@@ -59,17 +59,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPayment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPayment.Designer.cs">
-      <DependentUpon>frmPayment.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMember.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMember.Designer.cs">
       <DependentUpon>frmMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPaymentType.cs">
       <SubType>Form</SubType>
@@ -83,11 +83,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPayment.resx">
-      <DependentUpon>frmPayment.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMember.resx">
       <DependentUpon>frmMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPaymentType.resx">
       <DependentUpon>frmPaymentType.cs</DependentUpon>

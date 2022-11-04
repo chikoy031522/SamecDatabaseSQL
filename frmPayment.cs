@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace SamecProject
 {
@@ -17,12 +16,5 @@ namespace SamecProject
         {
             InitializeComponent();
         }
-        private void frmPayment_Load(object sender, EventArgs e)
-        {
-            
-        }
-
     }
-
-
 }
