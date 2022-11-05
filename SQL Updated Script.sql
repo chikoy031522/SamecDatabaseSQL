@@ -224,3 +224,17 @@ BEGIN
     
 END
 GO
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('DeletePayment'))
+   EXEC ('CREATE PROCEDURE DeletePayment AS BEGIN SET NOCOUNT ON; END')
+GO
+
+ALTER PROCEDURE [dbo].[DeletePayment](@PaymentID int)
+AS
+BEGIN
+	
+	SET NOCOUNT ON;
+	DELETE FROM tblPayment WHERE PaymentID = @PaymentID
+    	
+END
+GO
