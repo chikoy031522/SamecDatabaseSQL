@@ -97,11 +97,15 @@ namespace SamecProject
         private void dgvPaymentType_HeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             dgvPaymentType.CurrentRow.Selected = false;
+            txtPaymentTypeDesc.Text = "";
         }
-       
-        private void dgvPaymentType_CellContentClick(object sender, DataGridViewCellEventArgs e)
+               
+        private void dgvPaymentType_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            txtPaymentTypeDesc.Text = dgvPaymentType.SelectedRows[0].Cells["PaymentDesc"].Value.ToString();
+            if (dgvPaymentType.SelectedRows.Count > 0)
+            {
+                txtPaymentTypeDesc.Text = dgvPaymentType.SelectedRows[0].Cells[0].Value.ToString();
+            }            
         }
     }
 }

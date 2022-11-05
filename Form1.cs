@@ -138,6 +138,7 @@ namespace SamecProject
                 conn.Close();
                 dgvMembers.ReadOnly = true;
                 dgvMembers.DataSource = ds.Tables[0];
+                dgvMembers.ClearSelection();
             }
         }
         
@@ -254,6 +255,7 @@ namespace SamecProject
                 conn.Close();
                 dgvPayments.ReadOnly = true;
                 dgvPayments.DataSource = ds.Tables[0];
+                dgvPayments.ClearSelection();
             }
         }
 
