@@ -291,5 +291,17 @@ namespace SamecProject
 
             }
         }
+
+        private void btnMemberPrint_Click(object sender, EventArgs e)
+        {
+            frmReports repmem = new frmReports();
+            repmem.ShowDialog();
+        }
+
+        private void btnPaymentReport_Click(object sender, EventArgs e)
+        {
+            frmReports reppay = new frmReports();
+            reppay.ShowDialog();
+        }
     }
 }
