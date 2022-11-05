@@ -303,5 +303,13 @@ namespace SamecProject
             frmReports reppay = new frmReports();
             reppay.ShowDialog();
         }
+
+        private void btnUserSave_Click(object sender, EventArgs e)
+        {
+            if(txtUname.Text != "" && txtUPassword.Text != "" && txtUConfirm.Text != "" && txtUPassword.Text == txtUConfirm.Text)
+            {
+                
+            }
+        }
     }
 }

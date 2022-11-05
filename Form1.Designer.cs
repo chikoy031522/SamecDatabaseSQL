@@ -31,14 +31,19 @@ namespace SamecProject
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.grpLogin = new System.Windows.Forms.GroupBox();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -62,6 +67,19 @@ namespace SamecProject
             this.btnPayment = new System.Windows.Forms.Button();
             this.btnMember = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.pnlMaintenance = new System.Windows.Forms.Panel();
+            this.tabUser = new System.Windows.Forms.TabControl();
+            this.tabMaintenanceUser = new System.Windows.Forms.TabPage();
+            this.btnUserSave = new System.Windows.Forms.Button();
+            this.txtUConfirm = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUPassword = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUname = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvPaymentType = new System.Windows.Forms.DataGridView();
+            this.PaymentDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PaymentTypeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlPayment = new System.Windows.Forms.Panel();
             this.btnPaymentType = new System.Windows.Forms.Button();
             this.btnPaymentSearch = new System.Windows.Forms.Button();
@@ -98,8 +116,6 @@ namespace SamecProject
             this.EmailAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHome = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pnlMaintenance = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.tblMembersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -111,13 +127,16 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlMenu.SuspendLayout();
+            this.pnlMaintenance.SuspendLayout();
+            this.tabUser.SuspendLayout();
+            this.tabMaintenanceUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentType)).BeginInit();
             this.pnlPayment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
             this.pnlMember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.pnlHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlMaintenance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -237,10 +256,10 @@ namespace SamecProject
             // 
             this.pnlBody.Controls.Add(this.panel1);
             this.pnlBody.Controls.Add(this.pnlMenu);
+            this.pnlBody.Controls.Add(this.pnlMaintenance);
             this.pnlBody.Controls.Add(this.pnlPayment);
             this.pnlBody.Controls.Add(this.pnlMember);
             this.pnlBody.Controls.Add(this.pnlHome);
-            this.pnlBody.Controls.Add(this.pnlMaintenance);
             this.pnlBody.Location = new System.Drawing.Point(-4, 240);
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(1132, 556);
@@ -402,6 +421,203 @@ namespace SamecProject
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // pnlMaintenance
+            // 
+            this.pnlMaintenance.Controls.Add(this.tabUser);
+            this.pnlMaintenance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlMaintenance.Location = new System.Drawing.Point(10, 45);
+            this.pnlMaintenance.Name = "pnlMaintenance";
+            this.pnlMaintenance.Size = new System.Drawing.Size(1119, 465);
+            this.pnlMaintenance.TabIndex = 8;
+            // 
+            // tabUser
+            // 
+            this.tabUser.Controls.Add(this.tabMaintenanceUser);
+            this.tabUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabUser.Location = new System.Drawing.Point(22, 16);
+            this.tabUser.Name = "tabUser";
+            this.tabUser.SelectedIndex = 0;
+            this.tabUser.Size = new System.Drawing.Size(1080, 430);
+            this.tabUser.TabIndex = 0;
+            // 
+            // tabMaintenanceUser
+            // 
+            this.tabMaintenanceUser.BackColor = System.Drawing.Color.Beige;
+            this.tabMaintenanceUser.Controls.Add(this.btnUserSave);
+            this.tabMaintenanceUser.Controls.Add(this.txtUConfirm);
+            this.tabMaintenanceUser.Controls.Add(this.label5);
+            this.tabMaintenanceUser.Controls.Add(this.txtUPassword);
+            this.tabMaintenanceUser.Controls.Add(this.label4);
+            this.tabMaintenanceUser.Controls.Add(this.txtUname);
+            this.tabMaintenanceUser.Controls.Add(this.label3);
+            this.tabMaintenanceUser.Controls.Add(this.dgvPaymentType);
+            this.tabMaintenanceUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabMaintenanceUser.Location = new System.Drawing.Point(4, 25);
+            this.tabMaintenanceUser.Name = "tabMaintenanceUser";
+            this.tabMaintenanceUser.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMaintenanceUser.Size = new System.Drawing.Size(1072, 401);
+            this.tabMaintenanceUser.TabIndex = 0;
+            this.tabMaintenanceUser.Text = "User Maintenance";
+            // 
+            // btnUserSave
+            // 
+            this.btnUserSave.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnUserSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserSave.ForeColor = System.Drawing.Color.White;
+            this.btnUserSave.Location = new System.Drawing.Point(364, 192);
+            this.btnUserSave.Name = "btnUserSave";
+            this.btnUserSave.Size = new System.Drawing.Size(110, 28);
+            this.btnUserSave.TabIndex = 15;
+            this.btnUserSave.Text = "Save";
+            this.btnUserSave.UseVisualStyleBackColor = false;
+            this.btnUserSave.Click += new System.EventHandler(this.btnUserSave_Click);
+            // 
+            // txtUConfirm
+            // 
+            this.txtUConfirm.BackColor = System.Drawing.Color.White;
+            this.txtUConfirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUConfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUConfirm.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtUConfirm.Location = new System.Drawing.Point(326, 151);
+            this.txtUConfirm.MaxLength = 20;
+            this.txtUConfirm.Name = "txtUConfirm";
+            this.txtUConfirm.Size = new System.Drawing.Size(205, 27);
+            this.txtUConfirm.TabIndex = 14;
+            this.txtUConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUConfirm.UseSystemPasswordChar = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(323, 132);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(135, 16);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Confirm Password : ";
+            // 
+            // txtUPassword
+            // 
+            this.txtUPassword.BackColor = System.Drawing.Color.White;
+            this.txtUPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUPassword.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtUPassword.Location = new System.Drawing.Point(326, 100);
+            this.txtUPassword.MaxLength = 20;
+            this.txtUPassword.Name = "txtUPassword";
+            this.txtUPassword.Size = new System.Drawing.Size(205, 27);
+            this.txtUPassword.TabIndex = 13;
+            this.txtUPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUPassword.UseSystemPasswordChar = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(323, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 16);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Password : ";
+            // 
+            // txtUname
+            // 
+            this.txtUname.BackColor = System.Drawing.Color.White;
+            this.txtUname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUname.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtUname.Location = new System.Drawing.Point(326, 46);
+            this.txtUname.MaxLength = 20;
+            this.txtUname.Name = "txtUname";
+            this.txtUname.Size = new System.Drawing.Size(205, 27);
+            this.txtUname.TabIndex = 12;
+            this.txtUname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(323, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Username : ";
+            // 
+            // dgvPaymentType
+            // 
+            this.dgvPaymentType.AllowUserToAddRows = false;
+            this.dgvPaymentType.AllowUserToDeleteRows = false;
+            this.dgvPaymentType.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPaymentType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPaymentType.ColumnHeadersHeight = 30;
+            this.dgvPaymentType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPaymentType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PaymentDesc,
+            this.PaymentTypeID});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPaymentType.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPaymentType.EnableHeadersVisualStyles = false;
+            this.dgvPaymentType.GridColor = System.Drawing.Color.LightGray;
+            this.dgvPaymentType.Location = new System.Drawing.Point(24, 27);
+            this.dgvPaymentType.Name = "dgvPaymentType";
+            this.dgvPaymentType.ReadOnly = true;
+            this.dgvPaymentType.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPaymentType.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPaymentType.RowHeadersVisible = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPaymentType.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvPaymentType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPaymentType.Size = new System.Drawing.Size(269, 344);
+            this.dgvPaymentType.TabIndex = 8;
+            // 
+            // PaymentDesc
+            // 
+            this.PaymentDesc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PaymentDesc.DataPropertyName = "UserName";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
+            this.PaymentDesc.DefaultCellStyle = dataGridViewCellStyle2;
+            this.PaymentDesc.HeaderText = "User Name";
+            this.PaymentDesc.MaxInputLength = 10;
+            this.PaymentDesc.Name = "PaymentDesc";
+            this.PaymentDesc.ReadOnly = true;
+            this.PaymentDesc.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // PaymentTypeID
+            // 
+            this.PaymentTypeID.DataPropertyName = "UserID";
+            this.PaymentTypeID.HeaderText = "UserID";
+            this.PaymentTypeID.Name = "PaymentTypeID";
+            this.PaymentTypeID.ReadOnly = true;
+            this.PaymentTypeID.Visible = false;
+            // 
             // pnlPayment
             // 
             this.pnlPayment.Controls.Add(this.btnPaymentType);
@@ -508,14 +724,14 @@ namespace SamecProject
             this.dgvPayments.BackgroundColor = System.Drawing.Color.White;
             this.dgvPayments.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPayments.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvPayments.ColumnHeadersHeight = 30;
             this.dgvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPayments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -528,28 +744,28 @@ namespace SamecProject
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
             this.PaymentID});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPayments.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPayments.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvPayments.EnableHeadersVisualStyles = false;
             this.dgvPayments.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvPayments.Location = new System.Drawing.Point(17, 19);
             this.dgvPayments.Name = "dgvPayments";
             this.dgvPayments.ReadOnly = true;
             this.dgvPayments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvPayments.RowHeadersVisible = false;
             this.dgvPayments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPayments.Size = new System.Drawing.Size(970, 426);
@@ -558,11 +774,11 @@ namespace SamecProject
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "MemberID";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Blue;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Blue;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTextBoxColumn1.HeaderText = "Member ID";
             this.dataGridViewTextBoxColumn1.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
@@ -718,14 +934,14 @@ namespace SamecProject
             this.dgvMembers.BackgroundColor = System.Drawing.Color.White;
             this.dgvMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMembers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvMembers.ColumnHeadersHeight = 30;
             this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -738,28 +954,28 @@ namespace SamecProject
             this.Telephone,
             this.Inductiondate,
             this.EmailAddress});
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgvMembers.EnableHeadersVisualStyles = false;
             this.dgvMembers.GridColor = System.Drawing.Color.LightGray;
             this.dgvMembers.Location = new System.Drawing.Point(22, 15);
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.ReadOnly = true;
             this.dgvMembers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvMembers.RowHeadersVisible = false;
             this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMembers.Size = new System.Drawing.Size(970, 426);
@@ -768,11 +984,11 @@ namespace SamecProject
             // MemberID
             // 
             this.MemberID.DataPropertyName = "MemberID";
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Blue;
-            this.MemberID.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Blue;
+            this.MemberID.DefaultCellStyle = dataGridViewCellStyle11;
             this.MemberID.HeaderText = "Member ID";
             this.MemberID.MaxInputLength = 10;
             this.MemberID.Name = "MemberID";
@@ -863,25 +1079,6 @@ namespace SamecProject
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // pnlMaintenance
-            // 
-            this.pnlMaintenance.Controls.Add(this.label3);
-            this.pnlMaintenance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlMaintenance.Location = new System.Drawing.Point(10, 45);
-            this.pnlMaintenance.Name = "pnlMaintenance";
-            this.pnlMaintenance.Size = new System.Drawing.Size(1119, 465);
-            this.pnlMaintenance.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(419, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Panel Maintenance Code Here";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -912,14 +1109,17 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlMenu.ResumeLayout(false);
+            this.pnlMaintenance.ResumeLayout(false);
+            this.tabUser.ResumeLayout(false);
+            this.tabMaintenanceUser.ResumeLayout(false);
+            this.tabMaintenanceUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentType)).EndInit();
             this.pnlPayment.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
             this.pnlMember.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.pnlHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlMaintenance.ResumeLayout(false);
-            this.pnlMaintenance.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblMembersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -970,7 +1170,6 @@ namespace SamecProject
         private System.Windows.Forms.DataGridViewTextBoxColumn EmailAddress;
         private System.Windows.Forms.Panel pnlPayment;
         private System.Windows.Forms.Panel pnlMaintenance;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnMemberPrint;
         private System.Windows.Forms.Button btnPaymentReport;
         private System.Windows.Forms.Button btnPaymentRefresh;
@@ -989,6 +1188,18 @@ namespace SamecProject
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentID;
+        private System.Windows.Forms.TabControl tabUser;
+        private System.Windows.Forms.TabPage tabMaintenanceUser;
+        private System.Windows.Forms.DataGridView dgvPaymentType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentDesc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentTypeID;
+        private System.Windows.Forms.TextBox txtUConfirm;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtUPassword;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtUname;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnUserSave;
     }
 }
 
