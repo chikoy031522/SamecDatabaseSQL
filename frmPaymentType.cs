@@ -36,13 +36,10 @@ namespace SamecProject
                 da.Fill(ds);
                 conn.Close();                
                 dgvPaymentType.DataSource = ds.Tables[0];
+                dgvPaymentType.ClearSelection();
             }
         }
-        private void dgvPaymentType_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {            
-            txtPaymentTypeDesc.Text = dgvPaymentType.SelectedRows[0].Cells[0].Value.ToString();
-        }
-
+       
         private void PaymentTypeAddUpdateDelete(string trantype, string trandesc, string tranid)
         {
             if (!string.IsNullOrEmpty(trandesc))
@@ -94,6 +91,17 @@ namespace SamecProject
         private void btnPaymentTypeSave_Click(object sender, EventArgs e)
         {
             PaymentTypeAddUpdateDelete("add", txtPaymentTypeDesc.Text, "0");
+        }
+       
+
+        private void dgvPaymentType_HeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            dgvPaymentType.CurrentRow.Selected = false;
+        }
+       
+        private void dgvPaymentType_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtPaymentTypeDesc.Text = dgvPaymentType.SelectedRows[0].Cells["PaymentDesc"].Value.ToString();
         }
     }
 }

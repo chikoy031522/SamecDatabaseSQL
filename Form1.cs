@@ -266,5 +266,28 @@ namespace SamecProject
                 frp.ShowDialog();
             }
         }
+
+        private void btnPaymentDelete_Click(object sender, EventArgs e)
+        {
+            if (dgvPayments.SelectedRows.Count > 0)
+            {
+                DialogResult strRes = MessageBox.Show("Are you sure you want to delete this payment transaction ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (strRes == DialogResult.Yes)
+                {
+                    using (SqlConnection conn = new SqlConnection(SQLConnStr))
+                    {
+                        SqlCommand cmd = new SqlCommand("DeletePayment");
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@PaymentID", dgvPayments.SelectedRows[0].Cells[0].Value);
+                        cmd.Connection = conn;
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                        dgvPayments.Rows.RemoveAt(dgvPayments.SelectedRows[0].Index);                        
+                    }
+                }
+
+            }
+        }
     }
 }

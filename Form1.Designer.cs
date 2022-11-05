@@ -67,7 +67,7 @@ namespace SamecProject
             this.btnPaymentSearch = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnPaymentRefresh = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPaymentDelete = new System.Windows.Forms.Button();
             this.btnPaymentEdit = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dgvPayments = new System.Windows.Forms.DataGridView();
@@ -408,7 +408,7 @@ namespace SamecProject
             this.pnlPayment.Controls.Add(this.btnPaymentSearch);
             this.pnlPayment.Controls.Add(this.button1);
             this.pnlPayment.Controls.Add(this.btnPaymentRefresh);
-            this.pnlPayment.Controls.Add(this.button3);
+            this.pnlPayment.Controls.Add(this.btnPaymentDelete);
             this.pnlPayment.Controls.Add(this.btnPaymentEdit);
             this.pnlPayment.Controls.Add(this.button5);
             this.pnlPayment.Controls.Add(this.dgvPayments);
@@ -464,16 +464,17 @@ namespace SamecProject
             this.btnPaymentRefresh.UseVisualStyleBackColor = false;
             this.btnPaymentRefresh.Click += new System.EventHandler(this.btnPaymentRefresh_Click);
             // 
-            // button3
+            // btnPaymentDelete
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1008, 89);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 30);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnPaymentDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentDelete.Location = new System.Drawing.Point(1008, 89);
+            this.btnPaymentDelete.Name = "btnPaymentDelete";
+            this.btnPaymentDelete.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentDelete.TabIndex = 9;
+            this.btnPaymentDelete.Text = "Delete";
+            this.btnPaymentDelete.UseVisualStyleBackColor = false;
+            this.btnPaymentDelete.Click += new System.EventHandler(this.btnPaymentDelete_Click);
             // 
             // btnPaymentEdit
             // 
@@ -971,7 +972,7 @@ namespace SamecProject
         private System.Windows.Forms.Button btnMemberPrint;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnPaymentRefresh;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPaymentDelete;
         private System.Windows.Forms.Button btnPaymentEdit;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dgvPayments;
