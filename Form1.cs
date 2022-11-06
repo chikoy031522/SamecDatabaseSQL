@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.IO;
+using Microsoft.Reporting.WinForms;
 
 namespace SamecProject
 {    
@@ -294,13 +295,15 @@ namespace SamecProject
 
         private void btnMemberPrint_Click(object sender, EventArgs e)
         {
-            frmReports repmem = new frmReports();
+            ReportDataSource rds = new ReportDataSource("Members", dgvMembers.DataSource);
+            frmReports repmem = new frmReports(rds,"Members");
             repmem.ShowDialog();
         }
 
         private void btnPaymentReport_Click(object sender, EventArgs e)
         {
-            frmReports reppay = new frmReports();
+            ReportDataSource rds = new ReportDataSource("Payments", dgvPayments.DataSource);
+            frmReports reppay = new frmReports(rds,"Payments");            
             reppay.ShowDialog();
         }
 
