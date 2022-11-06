@@ -92,6 +92,7 @@ namespace SamecProject
             this.dgvPaymentType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPaymentType.Size = new System.Drawing.Size(269, 249);
             this.dgvPaymentType.TabIndex = 7;
+            this.dgvPaymentType.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPaymentType_CellContentClick);
             this.dgvPaymentType.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPaymentType_CellMouseClick);
             this.dgvPaymentType.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPaymentType_HeaderMouseClick);
             // 

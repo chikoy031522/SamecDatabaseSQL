@@ -82,18 +82,20 @@ BEGIN
 	
 	SET NOCOUNT ON;
 	
-	DECLARE @UserID uniqueidentifier = newid()
-	DECLARE @PasswordHash varbinary(max)
-
-	SET @PasswordHash = dbo.Hash(@Password,@UserID)
-    
+	DECLARE @UserID uniqueidentifier;
+	DECLARE @PasswordHash varbinary(MAX)
+	    
 	IF NOT EXISTS(SELECT 1 FROM tblUsers WHERE UserName = @UserName)
 	   BEGIN
+	       SET @UserID = NEWID()
+	       SET @PasswordHash = dbo.Hash(@Password,@UserID)
 	       INSERT INTO tblUsers
 		   SELECT @UserID,@Username,@PasswordHash,@isActive
 	   END
 	ELSE
 	   BEGIN
+	     SET @UserID = (SELECT UserID FROM tblUsers WHERE UserName = @UserName)
+		 SET @PasswordHash = dbo.Hash(@Password,@UserID)
 		 UPDATE tblUsers SET UserPassword = @PasswordHash, IsActive = @isActive WHERE Username = @Username
 	   END
 	
@@ -238,3 +240,34 @@ BEGIN
     	
 END
 GO
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('GetUsers'))
+   EXEC ('CREATE PROCEDURE GetUsers AS BEGIN SET NOCOUNT ON; END')
+GO
+
+
+ALTER PROCEDURE [dbo].[GetUsers] 	
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+    
+	SELECT Username,UserID FROM tblUsers WHERE IsActive = 1
+END
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('DeleteUser'))
+   EXEC ('CREATE PROCEDURE DeleteUser AS BEGIN SET NOCOUNT ON; END')
+GO
+
+ALTER PROCEDURE [dbo].[DeleteUser]	
+	(@UserName nvarchar(50))
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    IF EXISTS(SELECT 1 FROM tblUsers  WHERE Username = @UserName)
+	   UPDATE tblUsers SET IsActive = 0 WHERE Username = @UserName
+END

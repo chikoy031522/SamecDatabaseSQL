@@ -25,8 +25,7 @@ namespace SamecProject
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            SQLStringConnect();
-            
+            SQLStringConnect();            
         }
       
         private void btnLogin_Click(object sender, EventArgs e)
@@ -43,6 +42,7 @@ namespace SamecProject
                     lblUsernameLogin.Text = txtUsername.Text;                    
                     txtPassword.Text = "";
                     GetSetClass.globalString = txtUsername.Text;
+                    btnMaintenance.Visible = (txtUsername.Text == "Administrator") ? true : false;
                     btnHome_Click(sender,e);
                     pnlBody.Visible = true;
                 } else
@@ -192,6 +192,14 @@ namespace SamecProject
 
         }
 
+        private void dgvUsers_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (dgvUsers.SelectedRows.Count > 0)
+            {
+                txtUname.Text = dgvUsers.SelectedRows[0].Cells[0].Value.ToString();
+            }
+        }
+
         private void btnPayment_Click(object sender, EventArgs e)
         {
             btnPaymentRefresh_Click(sender, e);
@@ -201,7 +209,26 @@ namespace SamecProject
 
         private void btnMaintenance_Click(object sender, EventArgs e)
         {
+            GetUsers();
             pnlMaintenance.BringToFront();
+        }
+
+        private void GetUsers()
+        {
+            using (SqlConnection conn = new SqlConnection(SQLConnStr))
+            {
+                SqlCommand cmd = new SqlCommand("GetUsers");
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = conn;
+                conn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+                conn.Close();
+                dgvUsers.ReadOnly = true;
+                dgvUsers.DataSource = ds.Tables[0];
+                dgvUsers.ClearSelection();
+            }
         }
 
         public void SQLStringConnect()
@@ -311,7 +338,43 @@ namespace SamecProject
         {
             if(txtUname.Text != "" && txtUPassword.Text != "" && txtUConfirm.Text != "" && txtUPassword.Text == txtUConfirm.Text)
             {
-                
+                using(SqlConnection conn=new SqlConnection(GetSetClass.sqlconnectstring))
+                {
+                    SqlCommand cmd = new SqlCommand("AddUpdateUser", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Username", txtUname.Text);
+                    cmd.Parameters.AddWithValue("@Password", txtUConfirm.Text);                    
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    txtUConfirm.Text = "";txtUPassword.Text = "";
+                    GetUsers();
+                    MessageBox.Show("User data had been successfully save !!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+        }
+
+        private void btnUDelete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUname.Text))
+            {
+                DialogResult res = MessageBox.Show("Are you sure you want to remove " + txtUname.Text + " ?" , "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (res == DialogResult.Yes)
+                    {                
+                    using (SqlConnection conn = new SqlConnection(GetSetClass.sqlconnectstring))
+                    {
+                        SqlCommand cmd = new SqlCommand("DeleteUser", conn);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@Username", txtUname.Text);                    
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                        txtUConfirm.Text = ""; txtUPassword.Text = "";txtUname.Text = "";
+                        GetUsers();
+                        MessageBox.Show("User data had been successfully remove !!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
             }
         }
     }

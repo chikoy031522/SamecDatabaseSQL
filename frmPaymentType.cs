@@ -107,5 +107,10 @@ namespace SamecProject
                 txtPaymentTypeDesc.Text = dgvPaymentType.SelectedRows[0].Cells[0].Value.ToString();
             }            
         }
+
+        private void dgvPaymentType_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
