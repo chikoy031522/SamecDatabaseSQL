@@ -16,5 +16,13 @@ namespace SamecProject
         {
             InitializeComponent();
         }
+
+        private void frmReports_Load(object sender, EventArgs e)
+        {
+
+
+            this.rptViewer.RefreshReport();
+        }
+
     }
 }
