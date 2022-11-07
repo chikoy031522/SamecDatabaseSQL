@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace SamecProject
 {
-    public class testClass
+    public class TestClass
     {
-        public string Nelson { get; set; }
-        public string Chris { get; set; }
-       
+        static string nCar { get; set; }
+        static string Chris { get; set; }        
     }
 
     public class BisagUnsa
     {
-        private string Chris { get; set; }
-        testClass a = new testClass();
         
     }
 }

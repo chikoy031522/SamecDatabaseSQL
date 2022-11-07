@@ -241,6 +241,7 @@ namespace SamecProject
                     string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
                     GetSetClass.sqlconnectstring = strConn.Replace("servername", dbname);
                     SQLConnStr = GetSetClass.sqlconnectstring;
+                    txtPassword.Select();
                 }
             } else
             {
