@@ -141,7 +141,7 @@ namespace SamecProject
                     txtMemberLastName.Text = ds.Tables["tblMember"].Rows[0]["Lastname"].ToString();
                     cmbPaymentType.Focus();
                 }
-                catch (Exception ex)
+                catch (Exception l90o=0=opoex)
                 {
                     MessageBox.Show("There was an error retrieving the member ?", "Error");
                 }

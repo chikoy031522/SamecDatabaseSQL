@@ -8,5 +8,6 @@ namespace SamecProject
 {
     class testClass
     {
+        public string Nelson { get; set; }
     }
 }
