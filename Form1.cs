@@ -308,7 +308,7 @@ namespace SamecProject
                     {
                         SqlCommand cmd = new SqlCommand("DeletePayment");
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@PaymentID", dgvPayments.SelectedRows[0].Cells[0].Value);
+                        cmd.Parameters.AddWithValue("@PaymentID", dgvPayments.SelectedRows[0].Cells["PaymentID"].Value);
                         cmd.Connection = conn;
                         conn.Open();
                         cmd.ExecuteNonQuery();
