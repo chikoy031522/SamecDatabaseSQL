@@ -1,3 +1,11 @@
+--Adding PaymentID in tblPayment if not exists
+IF NOT EXISTS (SELECT *  FROM   sys.columns WHERE  object_id = OBJECT_ID(N'[dbo].[tblPayment]') AND name = 'PaymentID')
+BEGIN
+    ALTER TABLE tblPayment
+    ADD PaymentID INT IDENTITY(1,1)
+END
+
+
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('AddUpdateDeletePaymentType'))
    EXEC ('CREATE PROCEDURE AddUpdateDeletePaymentType AS BEGIN SET NOCOUNT ON; END')
 GO
@@ -271,3 +279,4 @@ BEGIN
     IF EXISTS(SELECT 1 FROM tblUsers  WHERE Username = @UserName)
 	   UPDATE tblUsers SET IsActive = 0 WHERE Username = @UserName
 END
+
