@@ -358,23 +358,33 @@ namespace SamecProject
 
         private void btnUDelete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUname.Text))
+            if (!string.IsNullOrEmpty(txtUname.Text) && txtUname.Text != "Administrator")
             {
                 DialogResult res = MessageBox.Show("Are you sure you want to remove " + txtUname.Text + " ?" , "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (res == DialogResult.Yes)
-                    {                
-                    using (SqlConnection conn = new SqlConnection(GetSetClass.sqlconnectstring))
+                {
+                    try
                     {
-                        SqlCommand cmd = new SqlCommand("DeleteUser", conn);
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@Username", txtUname.Text);                    
-                        conn.Open();
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
-                        txtUConfirm.Text = ""; txtUPassword.Text = "";txtUname.Text = "";
-                        GetUsers();
-                        MessageBox.Show("User data had been successfully remove !!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        using (SqlConnection conn = new SqlConnection(GetSetClass.sqlconnectstring))
+                        {
+                            SqlCommand cmd = new SqlCommand("DeleteUser", conn);
+                            cmd.CommandType = CommandType.StoredProcedure;
+                            cmd.Parameters.AddWithValue("@Username", txtUname.Text);
+                            conn.Open();
+                            cmd.ExecuteNonQuery();
+                            conn.Close();
+                            txtUConfirm.Text = ""; txtUPassword.Text = ""; txtUname.Text = "";
+                            GetUsers();
+                            //MessageBox.Show("User data had been successfully remove !!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
                     }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                   
+                    
                 }
             }
         }
