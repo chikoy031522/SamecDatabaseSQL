@@ -388,5 +388,10 @@ namespace SamecProject
                 }
             }
         }
+
+        private void btnPaymentSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
