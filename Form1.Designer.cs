@@ -30,19 +30,19 @@ namespace SamecProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.grpLogin = new System.Windows.Forms.GroupBox();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -66,6 +66,22 @@ namespace SamecProject
             this.btnPayment = new System.Windows.Forms.Button();
             this.btnMember = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.pnlMaintenance = new System.Windows.Forms.Panel();
+            this.tabUser = new System.Windows.Forms.TabControl();
+            this.tabMaintenanceUser = new System.Windows.Forms.TabPage();
+            this.btnUDelete = new System.Windows.Forms.Button();
+            this.btnUserSave = new System.Windows.Forms.Button();
+            this.txtUConfirm = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUPassword = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUname = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvUsers = new System.Windows.Forms.DataGridView();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlHome = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlPayment = new System.Windows.Forms.Panel();
             this.btnPaymentType = new System.Windows.Forms.Button();
             this.btnPaymentSearch = new System.Windows.Forms.Button();
@@ -75,15 +91,6 @@ namespace SamecProject
             this.btnPaymentEdit = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dgvPayments = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlMember = new System.Windows.Forms.Panel();
             this.btnMemberPrint = new System.Windows.Forms.Button();
             this.btnMemberRefresh = new System.Windows.Forms.Button();
@@ -100,22 +107,15 @@ namespace SamecProject
             this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inductiondate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlHome = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pnlMaintenance = new System.Windows.Forms.Panel();
-            this.tabUser = new System.Windows.Forms.TabControl();
-            this.tabMaintenanceUser = new System.Windows.Forms.TabPage();
-            this.btnUDelete = new System.Windows.Forms.Button();
-            this.btnUserSave = new System.Windows.Forms.Button();
-            this.txtUConfirm = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtUPassword = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtUname = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dgvUsers = new System.Windows.Forms.DataGridView();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PaymentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -126,16 +126,16 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlMenu.SuspendLayout();
-            this.pnlPayment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
-            this.pnlMember.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
-            this.pnlHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlMaintenance.SuspendLayout();
             this.tabUser.SuspendLayout();
             this.tabMaintenanceUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
+            this.pnlHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnlPayment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
+            this.pnlMember.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -254,10 +254,10 @@ namespace SamecProject
             // 
             this.pnlBody.Controls.Add(this.panel1);
             this.pnlBody.Controls.Add(this.pnlMenu);
-            this.pnlBody.Controls.Add(this.pnlMaintenance);
-            this.pnlBody.Controls.Add(this.pnlHome);
             this.pnlBody.Controls.Add(this.pnlPayment);
             this.pnlBody.Controls.Add(this.pnlMember);
+            this.pnlBody.Controls.Add(this.pnlMaintenance);
+            this.pnlBody.Controls.Add(this.pnlHome);
             this.pnlBody.Location = new System.Drawing.Point(-4, 240);
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(1132, 556);
@@ -420,467 +420,6 @@ namespace SamecProject
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pnlPayment
-            // 
-            this.pnlPayment.Controls.Add(this.btnPaymentType);
-            this.pnlPayment.Controls.Add(this.btnPaymentSearch);
-            this.pnlPayment.Controls.Add(this.btnPaymentReport);
-            this.pnlPayment.Controls.Add(this.btnPaymentRefresh);
-            this.pnlPayment.Controls.Add(this.btnPaymentDelete);
-            this.pnlPayment.Controls.Add(this.btnPaymentEdit);
-            this.pnlPayment.Controls.Add(this.button5);
-            this.pnlPayment.Controls.Add(this.dgvPayments);
-            this.pnlPayment.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlPayment.Location = new System.Drawing.Point(10, 46);
-            this.pnlPayment.Name = "pnlPayment";
-            this.pnlPayment.Size = new System.Drawing.Size(1119, 465);
-            this.pnlPayment.TabIndex = 4;
-            // 
-            // btnPaymentType
-            // 
-            this.btnPaymentType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPaymentType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentType.Location = new System.Drawing.Point(1008, 230);
-            this.btnPaymentType.Name = "btnPaymentType";
-            this.btnPaymentType.Size = new System.Drawing.Size(94, 30);
-            this.btnPaymentType.TabIndex = 13;
-            this.btnPaymentType.Text = "Type";
-            this.btnPaymentType.UseVisualStyleBackColor = false;
-            this.btnPaymentType.Click += new System.EventHandler(this.btnPaymentType_Click);
-            // 
-            // btnPaymentSearch
-            // 
-            this.btnPaymentSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPaymentSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentSearch.Location = new System.Drawing.Point(1008, 159);
-            this.btnPaymentSearch.Name = "btnPaymentSearch";
-            this.btnPaymentSearch.Size = new System.Drawing.Size(94, 30);
-            this.btnPaymentSearch.TabIndex = 12;
-            this.btnPaymentSearch.Text = "Search";
-            this.btnPaymentSearch.UseVisualStyleBackColor = false;
-            // 
-            // btnPaymentReport
-            // 
-            this.btnPaymentReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPaymentReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentReport.Location = new System.Drawing.Point(1008, 194);
-            this.btnPaymentReport.Name = "btnPaymentReport";
-            this.btnPaymentReport.Size = new System.Drawing.Size(94, 30);
-            this.btnPaymentReport.TabIndex = 11;
-            this.btnPaymentReport.Text = "Report";
-            this.btnPaymentReport.UseVisualStyleBackColor = false;
-            this.btnPaymentReport.Click += new System.EventHandler(this.btnPaymentReport_Click);
-            // 
-            // btnPaymentRefresh
-            // 
-            this.btnPaymentRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPaymentRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentRefresh.Location = new System.Drawing.Point(1008, 124);
-            this.btnPaymentRefresh.Name = "btnPaymentRefresh";
-            this.btnPaymentRefresh.Size = new System.Drawing.Size(94, 30);
-            this.btnPaymentRefresh.TabIndex = 10;
-            this.btnPaymentRefresh.Text = "Refresh";
-            this.btnPaymentRefresh.UseVisualStyleBackColor = false;
-            this.btnPaymentRefresh.Click += new System.EventHandler(this.btnPaymentRefresh_Click);
-            // 
-            // btnPaymentDelete
-            // 
-            this.btnPaymentDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPaymentDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentDelete.Location = new System.Drawing.Point(1008, 89);
-            this.btnPaymentDelete.Name = "btnPaymentDelete";
-            this.btnPaymentDelete.Size = new System.Drawing.Size(94, 30);
-            this.btnPaymentDelete.TabIndex = 9;
-            this.btnPaymentDelete.Text = "Delete";
-            this.btnPaymentDelete.UseVisualStyleBackColor = false;
-            this.btnPaymentDelete.Click += new System.EventHandler(this.btnPaymentDelete_Click);
-            // 
-            // btnPaymentEdit
-            // 
-            this.btnPaymentEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPaymentEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentEdit.Location = new System.Drawing.Point(1008, 54);
-            this.btnPaymentEdit.Name = "btnPaymentEdit";
-            this.btnPaymentEdit.Size = new System.Drawing.Size(94, 30);
-            this.btnPaymentEdit.TabIndex = 8;
-            this.btnPaymentEdit.Text = "Edit";
-            this.btnPaymentEdit.UseVisualStyleBackColor = false;
-            this.btnPaymentEdit.Click += new System.EventHandler(this.btnPaymentEdit_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(1008, 19);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 30);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Add";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // dgvPayments
-            // 
-            this.dgvPayments.AllowUserToAddRows = false;
-            this.dgvPayments.AllowUserToDeleteRows = false;
-            this.dgvPayments.BackgroundColor = System.Drawing.Color.White;
-            this.dgvPayments.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvPayments.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
-            this.dgvPayments.ColumnHeadersHeight = 30;
-            this.dgvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvPayments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.PaymentID});
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPayments.DefaultCellStyle = dataGridViewCellStyle29;
-            this.dgvPayments.EnableHeadersVisualStyles = false;
-            this.dgvPayments.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvPayments.Location = new System.Drawing.Point(17, 19);
-            this.dgvPayments.Name = "dgvPayments";
-            this.dgvPayments.ReadOnly = true;
-            this.dgvPayments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
-            this.dgvPayments.RowHeadersVisible = false;
-            this.dgvPayments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPayments.Size = new System.Drawing.Size(970, 426);
-            this.dgvPayments.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MemberID";
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Blue;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle28;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Member ID";
-            this.dataGridViewTextBoxColumn1.MaxInputLength = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Lastname";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Lastname";
-            this.dataGridViewTextBoxColumn2.MaxInputLength = 50;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Firstname";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Firstname";
-            this.dataGridViewTextBoxColumn3.MaxInputLength = 50;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "PaymentYear";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Year";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "PaymentMonth";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Month";
-            this.dataGridViewTextBoxColumn6.MaxInputLength = 200;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "PaymentAmount";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Amount";
-            this.dataGridViewTextBoxColumn7.MaxInputLength = 20;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Paymentdate";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Payment Date";
-            this.dataGridViewTextBoxColumn8.MaxInputLength = 20;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 126;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "PaymentDesc";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Type";
-            this.dataGridViewTextBoxColumn9.MaxInputLength = 50;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // PaymentID
-            // 
-            this.PaymentID.DataPropertyName = "PaymentID";
-            this.PaymentID.HeaderText = "PaymentID";
-            this.PaymentID.MaxInputLength = 10;
-            this.PaymentID.Name = "PaymentID";
-            this.PaymentID.ReadOnly = true;
-            this.PaymentID.Visible = false;
-            // 
-            // pnlMember
-            // 
-            this.pnlMember.Controls.Add(this.btnMemberPrint);
-            this.pnlMember.Controls.Add(this.btnMemberRefresh);
-            this.pnlMember.Controls.Add(this.btnMemberDelete);
-            this.pnlMember.Controls.Add(this.btnMemberEdit);
-            this.pnlMember.Controls.Add(this.btnMemberAdd);
-            this.pnlMember.Controls.Add(this.dgvMembers);
-            this.pnlMember.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlMember.Location = new System.Drawing.Point(10, 46);
-            this.pnlMember.Name = "pnlMember";
-            this.pnlMember.Size = new System.Drawing.Size(1119, 465);
-            this.pnlMember.TabIndex = 3;
-            this.pnlMember.Visible = false;
-            // 
-            // btnMemberPrint
-            // 
-            this.btnMemberPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnMemberPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemberPrint.Location = new System.Drawing.Point(1013, 159);
-            this.btnMemberPrint.Name = "btnMemberPrint";
-            this.btnMemberPrint.Size = new System.Drawing.Size(94, 30);
-            this.btnMemberPrint.TabIndex = 5;
-            this.btnMemberPrint.Text = "Report";
-            this.btnMemberPrint.UseVisualStyleBackColor = false;
-            this.btnMemberPrint.Click += new System.EventHandler(this.btnMemberPrint_Click);
-            // 
-            // btnMemberRefresh
-            // 
-            this.btnMemberRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnMemberRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemberRefresh.Location = new System.Drawing.Point(1013, 123);
-            this.btnMemberRefresh.Name = "btnMemberRefresh";
-            this.btnMemberRefresh.Size = new System.Drawing.Size(94, 30);
-            this.btnMemberRefresh.TabIndex = 4;
-            this.btnMemberRefresh.Text = "Refresh";
-            this.btnMemberRefresh.UseVisualStyleBackColor = false;
-            this.btnMemberRefresh.Click += new System.EventHandler(this.btnMemberRefresh_Click);
-            // 
-            // btnMemberDelete
-            // 
-            this.btnMemberDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnMemberDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemberDelete.Location = new System.Drawing.Point(1013, 87);
-            this.btnMemberDelete.Name = "btnMemberDelete";
-            this.btnMemberDelete.Size = new System.Drawing.Size(94, 30);
-            this.btnMemberDelete.TabIndex = 3;
-            this.btnMemberDelete.Text = "Delete";
-            this.btnMemberDelete.UseVisualStyleBackColor = false;
-            this.btnMemberDelete.Click += new System.EventHandler(this.btnMemberDelete_Click);
-            // 
-            // btnMemberEdit
-            // 
-            this.btnMemberEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnMemberEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemberEdit.Location = new System.Drawing.Point(1013, 51);
-            this.btnMemberEdit.Name = "btnMemberEdit";
-            this.btnMemberEdit.Size = new System.Drawing.Size(94, 30);
-            this.btnMemberEdit.TabIndex = 2;
-            this.btnMemberEdit.Text = "Edit";
-            this.btnMemberEdit.UseVisualStyleBackColor = false;
-            this.btnMemberEdit.Click += new System.EventHandler(this.btnMemberEdit_Click);
-            // 
-            // btnMemberAdd
-            // 
-            this.btnMemberAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnMemberAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemberAdd.Location = new System.Drawing.Point(1013, 15);
-            this.btnMemberAdd.Name = "btnMemberAdd";
-            this.btnMemberAdd.Size = new System.Drawing.Size(94, 30);
-            this.btnMemberAdd.TabIndex = 1;
-            this.btnMemberAdd.Text = "Add";
-            this.btnMemberAdd.UseVisualStyleBackColor = false;
-            this.btnMemberAdd.Click += new System.EventHandler(this.btnMemberAdd_Click);
-            // 
-            // dgvMembers
-            // 
-            this.dgvMembers.AllowUserToAddRows = false;
-            this.dgvMembers.AllowUserToDeleteRows = false;
-            this.dgvMembers.BackgroundColor = System.Drawing.Color.White;
-            this.dgvMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvMembers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
-            this.dgvMembers.ColumnHeadersHeight = 30;
-            this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MemberID,
-            this.Lastname,
-            this.Firstname,
-            this.Middlename,
-            this.Birthdate,
-            this.Birthplace,
-            this.Telephone,
-            this.Inductiondate,
-            this.EmailAddress});
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle33;
-            this.dgvMembers.EnableHeadersVisualStyles = false;
-            this.dgvMembers.GridColor = System.Drawing.Color.LightGray;
-            this.dgvMembers.Location = new System.Drawing.Point(22, 15);
-            this.dgvMembers.Name = "dgvMembers";
-            this.dgvMembers.ReadOnly = true;
-            this.dgvMembers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
-            this.dgvMembers.RowHeadersVisible = false;
-            this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMembers.Size = new System.Drawing.Size(970, 426);
-            this.dgvMembers.TabIndex = 0;
-            // 
-            // MemberID
-            // 
-            this.MemberID.DataPropertyName = "MemberID";
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Blue;
-            this.MemberID.DefaultCellStyle = dataGridViewCellStyle32;
-            this.MemberID.HeaderText = "Member ID";
-            this.MemberID.MaxInputLength = 10;
-            this.MemberID.Name = "MemberID";
-            this.MemberID.ReadOnly = true;
-            this.MemberID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Lastname
-            // 
-            this.Lastname.DataPropertyName = "Lastname";
-            this.Lastname.HeaderText = "Lastname";
-            this.Lastname.MaxInputLength = 50;
-            this.Lastname.Name = "Lastname";
-            this.Lastname.ReadOnly = true;
-            // 
-            // Firstname
-            // 
-            this.Firstname.DataPropertyName = "Firstname";
-            this.Firstname.HeaderText = "Firstname";
-            this.Firstname.MaxInputLength = 50;
-            this.Firstname.Name = "Firstname";
-            this.Firstname.ReadOnly = true;
-            // 
-            // Middlename
-            // 
-            this.Middlename.DataPropertyName = "Middlename";
-            this.Middlename.HeaderText = "Middlename";
-            this.Middlename.MaxInputLength = 50;
-            this.Middlename.Name = "Middlename";
-            this.Middlename.ReadOnly = true;
-            // 
-            // Birthdate
-            // 
-            this.Birthdate.DataPropertyName = "Birthdate";
-            this.Birthdate.HeaderText = "Birthdate";
-            this.Birthdate.Name = "Birthdate";
-            this.Birthdate.ReadOnly = true;
-            // 
-            // Birthplace
-            // 
-            this.Birthplace.DataPropertyName = "Birthplace";
-            this.Birthplace.HeaderText = "Birthplace";
-            this.Birthplace.MaxInputLength = 200;
-            this.Birthplace.Name = "Birthplace";
-            this.Birthplace.ReadOnly = true;
-            // 
-            // Telephone
-            // 
-            this.Telephone.DataPropertyName = "Telephone";
-            this.Telephone.HeaderText = "Telephone";
-            this.Telephone.MaxInputLength = 20;
-            this.Telephone.Name = "Telephone";
-            this.Telephone.ReadOnly = true;
-            // 
-            // Inductiondate
-            // 
-            this.Inductiondate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Inductiondate.DataPropertyName = "Inductiondate";
-            this.Inductiondate.HeaderText = "Induction Date";
-            this.Inductiondate.MaxInputLength = 20;
-            this.Inductiondate.Name = "Inductiondate";
-            this.Inductiondate.ReadOnly = true;
-            this.Inductiondate.Width = 130;
-            // 
-            // EmailAddress
-            // 
-            this.EmailAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.EmailAddress.DataPropertyName = "EmailAddress";
-            this.EmailAddress.HeaderText = "Email Address";
-            this.EmailAddress.MaxInputLength = 50;
-            this.EmailAddress.Name = "EmailAddress";
-            this.EmailAddress.ReadOnly = true;
-            // 
-            // pnlHome
-            // 
-            this.pnlHome.Controls.Add(this.pictureBox3);
-            this.pnlHome.Location = new System.Drawing.Point(10, 48);
-            this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(1119, 466);
-            this.pnlHome.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(304, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(481, 426);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // pnlMaintenance
             // 
             this.pnlMaintenance.Controls.Add(this.tabUser);
@@ -1027,45 +566,45 @@ namespace SamecProject
             this.dgvUsers.AllowUserToAddRows = false;
             this.dgvUsers.AllowUserToDeleteRows = false;
             this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvUsers.ColumnHeadersHeight = 30;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserName,
             this.UserID});
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvUsers.EnableHeadersVisualStyles = false;
             this.dgvUsers.GridColor = System.Drawing.Color.LightGray;
             this.dgvUsers.Location = new System.Drawing.Point(24, 27);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
             this.dgvUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvUsers.RowHeadersVisible = false;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowsDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsers.Size = new System.Drawing.Size(269, 344);
             this.dgvUsers.TabIndex = 8;
@@ -1075,11 +614,11 @@ namespace SamecProject
             // 
             this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.UserName.DataPropertyName = "UserName";
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Blue;
-            this.UserName.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Blue;
+            this.UserName.DefaultCellStyle = dataGridViewCellStyle10;
             this.UserName.HeaderText = "User Name";
             this.UserName.MaxInputLength = 10;
             this.UserName.Name = "UserName";
@@ -1093,6 +632,469 @@ namespace SamecProject
             this.UserID.Name = "UserID";
             this.UserID.ReadOnly = true;
             this.UserID.Visible = false;
+            // 
+            // pnlHome
+            // 
+            this.pnlHome.Controls.Add(this.pictureBox3);
+            this.pnlHome.Location = new System.Drawing.Point(10, 48);
+            this.pnlHome.Name = "pnlHome";
+            this.pnlHome.Size = new System.Drawing.Size(1119, 466);
+            this.pnlHome.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(304, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(481, 426);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pnlPayment
+            // 
+            this.pnlPayment.Controls.Add(this.btnPaymentType);
+            this.pnlPayment.Controls.Add(this.btnPaymentSearch);
+            this.pnlPayment.Controls.Add(this.btnPaymentReport);
+            this.pnlPayment.Controls.Add(this.btnPaymentRefresh);
+            this.pnlPayment.Controls.Add(this.btnPaymentDelete);
+            this.pnlPayment.Controls.Add(this.btnPaymentEdit);
+            this.pnlPayment.Controls.Add(this.button5);
+            this.pnlPayment.Controls.Add(this.dgvPayments);
+            this.pnlPayment.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlPayment.Location = new System.Drawing.Point(10, 46);
+            this.pnlPayment.Name = "pnlPayment";
+            this.pnlPayment.Size = new System.Drawing.Size(1119, 465);
+            this.pnlPayment.TabIndex = 4;
+            // 
+            // btnPaymentType
+            // 
+            this.btnPaymentType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentType.Location = new System.Drawing.Point(1008, 230);
+            this.btnPaymentType.Name = "btnPaymentType";
+            this.btnPaymentType.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentType.TabIndex = 13;
+            this.btnPaymentType.Text = "Type";
+            this.btnPaymentType.UseVisualStyleBackColor = false;
+            this.btnPaymentType.Click += new System.EventHandler(this.btnPaymentType_Click);
+            // 
+            // btnPaymentSearch
+            // 
+            this.btnPaymentSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentSearch.Location = new System.Drawing.Point(1008, 159);
+            this.btnPaymentSearch.Name = "btnPaymentSearch";
+            this.btnPaymentSearch.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentSearch.TabIndex = 12;
+            this.btnPaymentSearch.Text = "Search";
+            this.btnPaymentSearch.UseVisualStyleBackColor = false;
+            // 
+            // btnPaymentReport
+            // 
+            this.btnPaymentReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentReport.Location = new System.Drawing.Point(1008, 194);
+            this.btnPaymentReport.Name = "btnPaymentReport";
+            this.btnPaymentReport.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentReport.TabIndex = 11;
+            this.btnPaymentReport.Text = "Report";
+            this.btnPaymentReport.UseVisualStyleBackColor = false;
+            this.btnPaymentReport.Click += new System.EventHandler(this.btnPaymentReport_Click);
+            // 
+            // btnPaymentRefresh
+            // 
+            this.btnPaymentRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentRefresh.Location = new System.Drawing.Point(1008, 124);
+            this.btnPaymentRefresh.Name = "btnPaymentRefresh";
+            this.btnPaymentRefresh.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentRefresh.TabIndex = 10;
+            this.btnPaymentRefresh.Text = "Refresh";
+            this.btnPaymentRefresh.UseVisualStyleBackColor = false;
+            this.btnPaymentRefresh.Click += new System.EventHandler(this.btnPaymentRefresh_Click);
+            // 
+            // btnPaymentDelete
+            // 
+            this.btnPaymentDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentDelete.Location = new System.Drawing.Point(1008, 89);
+            this.btnPaymentDelete.Name = "btnPaymentDelete";
+            this.btnPaymentDelete.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentDelete.TabIndex = 9;
+            this.btnPaymentDelete.Text = "Delete";
+            this.btnPaymentDelete.UseVisualStyleBackColor = false;
+            this.btnPaymentDelete.Click += new System.EventHandler(this.btnPaymentDelete_Click);
+            // 
+            // btnPaymentEdit
+            // 
+            this.btnPaymentEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPaymentEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaymentEdit.Location = new System.Drawing.Point(1008, 54);
+            this.btnPaymentEdit.Name = "btnPaymentEdit";
+            this.btnPaymentEdit.Size = new System.Drawing.Size(94, 30);
+            this.btnPaymentEdit.TabIndex = 8;
+            this.btnPaymentEdit.Text = "Edit";
+            this.btnPaymentEdit.UseVisualStyleBackColor = false;
+            this.btnPaymentEdit.Click += new System.EventHandler(this.btnPaymentEdit_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(1008, 19);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(94, 30);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Add";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dgvPayments
+            // 
+            this.dgvPayments.AllowUserToAddRows = false;
+            this.dgvPayments.AllowUserToDeleteRows = false;
+            this.dgvPayments.BackgroundColor = System.Drawing.Color.White;
+            this.dgvPayments.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPayments.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPayments.ColumnHeadersHeight = 30;
+            this.dgvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPayments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.PaymentID});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPayments.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPayments.EnableHeadersVisualStyles = false;
+            this.dgvPayments.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvPayments.Location = new System.Drawing.Point(17, 19);
+            this.dgvPayments.Name = "dgvPayments";
+            this.dgvPayments.ReadOnly = true;
+            this.dgvPayments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPayments.RowHeadersVisible = false;
+            this.dgvPayments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPayments.Size = new System.Drawing.Size(970, 426);
+            this.dgvPayments.TabIndex = 6;
+            // 
+            // pnlMember
+            // 
+            this.pnlMember.Controls.Add(this.btnMemberPrint);
+            this.pnlMember.Controls.Add(this.btnMemberRefresh);
+            this.pnlMember.Controls.Add(this.btnMemberDelete);
+            this.pnlMember.Controls.Add(this.btnMemberEdit);
+            this.pnlMember.Controls.Add(this.btnMemberAdd);
+            this.pnlMember.Controls.Add(this.dgvMembers);
+            this.pnlMember.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlMember.Location = new System.Drawing.Point(10, 46);
+            this.pnlMember.Name = "pnlMember";
+            this.pnlMember.Size = new System.Drawing.Size(1119, 465);
+            this.pnlMember.TabIndex = 3;
+            this.pnlMember.Visible = false;
+            // 
+            // btnMemberPrint
+            // 
+            this.btnMemberPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberPrint.Location = new System.Drawing.Point(1013, 159);
+            this.btnMemberPrint.Name = "btnMemberPrint";
+            this.btnMemberPrint.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberPrint.TabIndex = 5;
+            this.btnMemberPrint.Text = "Report";
+            this.btnMemberPrint.UseVisualStyleBackColor = false;
+            this.btnMemberPrint.Click += new System.EventHandler(this.btnMemberPrint_Click);
+            // 
+            // btnMemberRefresh
+            // 
+            this.btnMemberRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberRefresh.Location = new System.Drawing.Point(1013, 123);
+            this.btnMemberRefresh.Name = "btnMemberRefresh";
+            this.btnMemberRefresh.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberRefresh.TabIndex = 4;
+            this.btnMemberRefresh.Text = "Refresh";
+            this.btnMemberRefresh.UseVisualStyleBackColor = false;
+            this.btnMemberRefresh.Click += new System.EventHandler(this.btnMemberRefresh_Click);
+            // 
+            // btnMemberDelete
+            // 
+            this.btnMemberDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberDelete.Location = new System.Drawing.Point(1013, 87);
+            this.btnMemberDelete.Name = "btnMemberDelete";
+            this.btnMemberDelete.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberDelete.TabIndex = 3;
+            this.btnMemberDelete.Text = "Delete";
+            this.btnMemberDelete.UseVisualStyleBackColor = false;
+            this.btnMemberDelete.Click += new System.EventHandler(this.btnMemberDelete_Click);
+            // 
+            // btnMemberEdit
+            // 
+            this.btnMemberEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberEdit.Location = new System.Drawing.Point(1013, 51);
+            this.btnMemberEdit.Name = "btnMemberEdit";
+            this.btnMemberEdit.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberEdit.TabIndex = 2;
+            this.btnMemberEdit.Text = "Edit";
+            this.btnMemberEdit.UseVisualStyleBackColor = false;
+            this.btnMemberEdit.Click += new System.EventHandler(this.btnMemberEdit_Click);
+            // 
+            // btnMemberAdd
+            // 
+            this.btnMemberAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMemberAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemberAdd.Location = new System.Drawing.Point(1013, 15);
+            this.btnMemberAdd.Name = "btnMemberAdd";
+            this.btnMemberAdd.Size = new System.Drawing.Size(94, 30);
+            this.btnMemberAdd.TabIndex = 1;
+            this.btnMemberAdd.Text = "Add";
+            this.btnMemberAdd.UseVisualStyleBackColor = false;
+            this.btnMemberAdd.Click += new System.EventHandler(this.btnMemberAdd_Click);
+            // 
+            // dgvMembers
+            // 
+            this.dgvMembers.AllowUserToAddRows = false;
+            this.dgvMembers.AllowUserToDeleteRows = false;
+            this.dgvMembers.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMembers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvMembers.ColumnHeadersHeight = 30;
+            this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MemberID,
+            this.Lastname,
+            this.Firstname,
+            this.Middlename,
+            this.Birthdate,
+            this.Birthplace,
+            this.Telephone,
+            this.Inductiondate,
+            this.EmailAddress});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvMembers.EnableHeadersVisualStyles = false;
+            this.dgvMembers.GridColor = System.Drawing.Color.LightGray;
+            this.dgvMembers.Location = new System.Drawing.Point(22, 15);
+            this.dgvMembers.Name = "dgvMembers";
+            this.dgvMembers.ReadOnly = true;
+            this.dgvMembers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvMembers.RowHeadersVisible = false;
+            this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMembers.Size = new System.Drawing.Size(970, 426);
+            this.dgvMembers.TabIndex = 0;
+            // 
+            // MemberID
+            // 
+            this.MemberID.DataPropertyName = "MemberID";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
+            this.MemberID.DefaultCellStyle = dataGridViewCellStyle6;
+            this.MemberID.HeaderText = "ID Number";
+            this.MemberID.MaxInputLength = 10;
+            this.MemberID.Name = "MemberID";
+            this.MemberID.ReadOnly = true;
+            this.MemberID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.MemberID.Width = 90;
+            // 
+            // Lastname
+            // 
+            this.Lastname.DataPropertyName = "Lastname";
+            this.Lastname.HeaderText = "Last Name";
+            this.Lastname.MaxInputLength = 50;
+            this.Lastname.Name = "Lastname";
+            this.Lastname.ReadOnly = true;
+            // 
+            // Firstname
+            // 
+            this.Firstname.DataPropertyName = "Firstname";
+            this.Firstname.HeaderText = "First Name";
+            this.Firstname.MaxInputLength = 50;
+            this.Firstname.Name = "Firstname";
+            this.Firstname.ReadOnly = true;
+            // 
+            // Middlename
+            // 
+            this.Middlename.DataPropertyName = "Middlename";
+            this.Middlename.HeaderText = "Middle Name";
+            this.Middlename.MaxInputLength = 50;
+            this.Middlename.Name = "Middlename";
+            this.Middlename.ReadOnly = true;
+            this.Middlename.Width = 110;
+            // 
+            // Birthdate
+            // 
+            this.Birthdate.DataPropertyName = "Birthdate";
+            this.Birthdate.HeaderText = "Birth Date";
+            this.Birthdate.Name = "Birthdate";
+            this.Birthdate.ReadOnly = true;
+            // 
+            // Birthplace
+            // 
+            this.Birthplace.DataPropertyName = "Birthplace";
+            this.Birthplace.HeaderText = "Birth Place";
+            this.Birthplace.MaxInputLength = 200;
+            this.Birthplace.Name = "Birthplace";
+            this.Birthplace.ReadOnly = true;
+            this.Birthplace.Width = 130;
+            // 
+            // Telephone
+            // 
+            this.Telephone.DataPropertyName = "Telephone";
+            this.Telephone.HeaderText = "Telephone";
+            this.Telephone.MaxInputLength = 20;
+            this.Telephone.Name = "Telephone";
+            this.Telephone.ReadOnly = true;
+            // 
+            // Inductiondate
+            // 
+            this.Inductiondate.DataPropertyName = "Inductiondate";
+            this.Inductiondate.HeaderText = "Induction Date";
+            this.Inductiondate.MaxInputLength = 20;
+            this.Inductiondate.Name = "Inductiondate";
+            this.Inductiondate.ReadOnly = true;
+            this.Inductiondate.Width = 120;
+            // 
+            // EmailAddress
+            // 
+            this.EmailAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.EmailAddress.DataPropertyName = "EmailAddress";
+            this.EmailAddress.HeaderText = "Email Address";
+            this.EmailAddress.MaxInputLength = 50;
+            this.EmailAddress.Name = "EmailAddress";
+            this.EmailAddress.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MemberID";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID Number";
+            this.dataGridViewTextBoxColumn1.MaxInputLength = 10;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Lastname";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Last Name";
+            this.dataGridViewTextBoxColumn2.MaxInputLength = 50;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Firstname";
+            this.dataGridViewTextBoxColumn3.HeaderText = "First Name";
+            this.dataGridViewTextBoxColumn3.MaxInputLength = 50;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "PaymentYear";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Year";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "PaymentMonth";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Month";
+            this.dataGridViewTextBoxColumn6.MaxInputLength = 200;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "PaymentAmount";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Amount";
+            this.dataGridViewTextBoxColumn7.MaxInputLength = 20;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Paymentdate";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Payment Date";
+            this.dataGridViewTextBoxColumn8.MaxInputLength = 20;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 126;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "PaymentDesc";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Type";
+            this.dataGridViewTextBoxColumn9.MaxInputLength = 50;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // PaymentID
+            // 
+            this.PaymentID.DataPropertyName = "PaymentID";
+            this.PaymentID.HeaderText = "PaymentID";
+            this.PaymentID.MaxInputLength = 10;
+            this.PaymentID.Name = "PaymentID";
+            this.PaymentID.ReadOnly = true;
+            this.PaymentID.Visible = false;
             // 
             // frmMain
             // 
@@ -1124,17 +1126,17 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlMenu.ResumeLayout(false);
-            this.pnlPayment.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
-            this.pnlMember.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
-            this.pnlHome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlMaintenance.ResumeLayout(false);
             this.tabUser.ResumeLayout(false);
             this.tabMaintenanceUser.ResumeLayout(false);
             this.tabMaintenanceUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
+            this.pnlHome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnlPayment.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
+            this.pnlMember.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1172,15 +1174,6 @@ namespace SamecProject
         private System.Windows.Forms.Button btnMemberDelete;
         private System.Windows.Forms.Button btnMemberEdit;
         private System.Windows.Forms.Button btnMemberAdd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MemberID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Firstname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Middlename;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Birthdate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Birthplace;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Inductiondate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmailAddress;
         private System.Windows.Forms.Panel pnlPayment;
         private System.Windows.Forms.Panel pnlMaintenance;
         private System.Windows.Forms.Button btnMemberPrint;
@@ -1192,15 +1185,6 @@ namespace SamecProject
         private System.Windows.Forms.DataGridView dgvPayments;
         private System.Windows.Forms.Button btnPaymentSearch;
         private System.Windows.Forms.Button btnPaymentType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentID;
         private System.Windows.Forms.TabControl tabUser;
         private System.Windows.Forms.TabPage tabMaintenanceUser;
         private System.Windows.Forms.DataGridView dgvUsers;
@@ -1214,6 +1198,24 @@ namespace SamecProject
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.Button btnUDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MemberID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Firstname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Middlename;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Birthdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Birthplace;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Inductiondate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmailAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentID;
     }
 }
 
