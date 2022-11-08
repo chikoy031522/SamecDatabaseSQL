@@ -30,18 +30,18 @@ namespace SamecProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.grpLogin = new System.Windows.Forms.GroupBox();
@@ -66,22 +66,6 @@ namespace SamecProject
             this.btnPayment = new System.Windows.Forms.Button();
             this.btnMember = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.pnlMaintenance = new System.Windows.Forms.Panel();
-            this.tabUser = new System.Windows.Forms.TabControl();
-            this.tabMaintenanceUser = new System.Windows.Forms.TabPage();
-            this.btnUDelete = new System.Windows.Forms.Button();
-            this.btnUserSave = new System.Windows.Forms.Button();
-            this.txtUConfirm = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtUPassword = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtUname = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dgvUsers = new System.Windows.Forms.DataGridView();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlHome = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlPayment = new System.Windows.Forms.Panel();
             this.btnPaymentType = new System.Windows.Forms.Button();
             this.btnPaymentSearch = new System.Windows.Forms.Button();
@@ -107,6 +91,22 @@ namespace SamecProject
             this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inductiondate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlMaintenance = new System.Windows.Forms.Panel();
+            this.tabUser = new System.Windows.Forms.TabControl();
+            this.tabMaintenanceUser = new System.Windows.Forms.TabPage();
+            this.btnUDelete = new System.Windows.Forms.Button();
+            this.btnUserSave = new System.Windows.Forms.Button();
+            this.txtUConfirm = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUPassword = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUname = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvUsers = new System.Windows.Forms.DataGridView();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlHome = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -126,16 +126,16 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlMenu.SuspendLayout();
+            this.pnlPayment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
+            this.pnlMember.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.pnlMaintenance.SuspendLayout();
             this.tabUser.SuspendLayout();
             this.tabMaintenanceUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.pnlHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlPayment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
-            this.pnlMember.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -420,237 +420,6 @@ namespace SamecProject
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pnlMaintenance
-            // 
-            this.pnlMaintenance.Controls.Add(this.tabUser);
-            this.pnlMaintenance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlMaintenance.Location = new System.Drawing.Point(10, 45);
-            this.pnlMaintenance.Name = "pnlMaintenance";
-            this.pnlMaintenance.Size = new System.Drawing.Size(1119, 465);
-            this.pnlMaintenance.TabIndex = 8;
-            // 
-            // tabUser
-            // 
-            this.tabUser.Controls.Add(this.tabMaintenanceUser);
-            this.tabUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabUser.Location = new System.Drawing.Point(22, 16);
-            this.tabUser.Name = "tabUser";
-            this.tabUser.SelectedIndex = 0;
-            this.tabUser.Size = new System.Drawing.Size(1080, 430);
-            this.tabUser.TabIndex = 0;
-            // 
-            // tabMaintenanceUser
-            // 
-            this.tabMaintenanceUser.BackColor = System.Drawing.Color.Beige;
-            this.tabMaintenanceUser.Controls.Add(this.btnUDelete);
-            this.tabMaintenanceUser.Controls.Add(this.btnUserSave);
-            this.tabMaintenanceUser.Controls.Add(this.txtUConfirm);
-            this.tabMaintenanceUser.Controls.Add(this.label5);
-            this.tabMaintenanceUser.Controls.Add(this.txtUPassword);
-            this.tabMaintenanceUser.Controls.Add(this.label4);
-            this.tabMaintenanceUser.Controls.Add(this.txtUname);
-            this.tabMaintenanceUser.Controls.Add(this.label3);
-            this.tabMaintenanceUser.Controls.Add(this.dgvUsers);
-            this.tabMaintenanceUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabMaintenanceUser.Location = new System.Drawing.Point(4, 25);
-            this.tabMaintenanceUser.Name = "tabMaintenanceUser";
-            this.tabMaintenanceUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMaintenanceUser.Size = new System.Drawing.Size(1072, 401);
-            this.tabMaintenanceUser.TabIndex = 0;
-            this.tabMaintenanceUser.Text = "User Maintenance";
-            // 
-            // btnUDelete
-            // 
-            this.btnUDelete.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnUDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUDelete.ForeColor = System.Drawing.Color.White;
-            this.btnUDelete.Location = new System.Drawing.Point(428, 196);
-            this.btnUDelete.Name = "btnUDelete";
-            this.btnUDelete.Size = new System.Drawing.Size(103, 28);
-            this.btnUDelete.TabIndex = 16;
-            this.btnUDelete.Text = "Delete";
-            this.btnUDelete.UseVisualStyleBackColor = false;
-            this.btnUDelete.Click += new System.EventHandler(this.btnUDelete_Click);
-            // 
-            // btnUserSave
-            // 
-            this.btnUserSave.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnUserSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUserSave.ForeColor = System.Drawing.Color.White;
-            this.btnUserSave.Location = new System.Drawing.Point(326, 195);
-            this.btnUserSave.Name = "btnUserSave";
-            this.btnUserSave.Size = new System.Drawing.Size(96, 28);
-            this.btnUserSave.TabIndex = 15;
-            this.btnUserSave.Text = "Save";
-            this.btnUserSave.UseVisualStyleBackColor = false;
-            this.btnUserSave.Click += new System.EventHandler(this.btnUserSave_Click);
-            // 
-            // txtUConfirm
-            // 
-            this.txtUConfirm.BackColor = System.Drawing.Color.White;
-            this.txtUConfirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUConfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUConfirm.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtUConfirm.Location = new System.Drawing.Point(326, 151);
-            this.txtUConfirm.MaxLength = 20;
-            this.txtUConfirm.Name = "txtUConfirm";
-            this.txtUConfirm.Size = new System.Drawing.Size(205, 27);
-            this.txtUConfirm.TabIndex = 14;
-            this.txtUConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUConfirm.UseSystemPasswordChar = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(323, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 16);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Confirm Password : ";
-            // 
-            // txtUPassword
-            // 
-            this.txtUPassword.BackColor = System.Drawing.Color.White;
-            this.txtUPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUPassword.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtUPassword.Location = new System.Drawing.Point(326, 100);
-            this.txtUPassword.MaxLength = 20;
-            this.txtUPassword.Name = "txtUPassword";
-            this.txtUPassword.Size = new System.Drawing.Size(205, 27);
-            this.txtUPassword.TabIndex = 13;
-            this.txtUPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUPassword.UseSystemPasswordChar = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(323, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Password : ";
-            // 
-            // txtUname
-            // 
-            this.txtUname.BackColor = System.Drawing.Color.White;
-            this.txtUname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUname.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtUname.Location = new System.Drawing.Point(326, 46);
-            this.txtUname.MaxLength = 20;
-            this.txtUname.Name = "txtUname";
-            this.txtUname.Size = new System.Drawing.Size(205, 27);
-            this.txtUname.TabIndex = 12;
-            this.txtUname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(323, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Username : ";
-            // 
-            // dgvUsers
-            // 
-            this.dgvUsers.AllowUserToAddRows = false;
-            this.dgvUsers.AllowUserToDeleteRows = false;
-            this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
-            this.dgvUsers.ColumnHeadersHeight = 30;
-            this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.UserName,
-            this.UserID});
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle20;
-            this.dgvUsers.EnableHeadersVisualStyles = false;
-            this.dgvUsers.GridColor = System.Drawing.Color.LightGray;
-            this.dgvUsers.Location = new System.Drawing.Point(24, 27);
-            this.dgvUsers.Name = "dgvUsers";
-            this.dgvUsers.ReadOnly = true;
-            this.dgvUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
-            this.dgvUsers.RowHeadersVisible = false;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowsDefaultCellStyle = dataGridViewCellStyle22;
-            this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsers.Size = new System.Drawing.Size(269, 344);
-            this.dgvUsers.TabIndex = 8;
-            this.dgvUsers.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUsers_CellMouseClick);
-            // 
-            // UserName
-            // 
-            this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.UserName.DataPropertyName = "UserName";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Blue;
-            this.UserName.DefaultCellStyle = dataGridViewCellStyle19;
-            this.UserName.HeaderText = "User Name";
-            this.UserName.MaxInputLength = 10;
-            this.UserName.Name = "UserName";
-            this.UserName.ReadOnly = true;
-            this.UserName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // UserID
-            // 
-            this.UserID.DataPropertyName = "UserID";
-            this.UserID.HeaderText = "UserID";
-            this.UserID.Name = "UserID";
-            this.UserID.ReadOnly = true;
-            this.UserID.Visible = false;
-            // 
-            // pnlHome
-            // 
-            this.pnlHome.Controls.Add(this.pictureBox3);
-            this.pnlHome.Location = new System.Drawing.Point(10, 48);
-            this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(1119, 466);
-            this.pnlHome.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(304, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(481, 426);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // pnlPayment
             // 
             this.pnlPayment.Controls.Add(this.btnPaymentType);
@@ -887,14 +656,14 @@ namespace SamecProject
             this.dgvMembers.BackgroundColor = System.Drawing.Color.White;
             this.dgvMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMembers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dgvMembers.ColumnHeadersHeight = 30;
             this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -907,28 +676,28 @@ namespace SamecProject
             this.Telephone,
             this.Inductiondate,
             this.EmailAddress});
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle20;
             this.dgvMembers.EnableHeadersVisualStyles = false;
             this.dgvMembers.GridColor = System.Drawing.Color.LightGray;
             this.dgvMembers.Location = new System.Drawing.Point(22, 15);
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.ReadOnly = true;
             this.dgvMembers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvMembers.RowHeadersVisible = false;
             this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMembers.Size = new System.Drawing.Size(970, 426);
@@ -937,11 +706,11 @@ namespace SamecProject
             // MemberID
             // 
             this.MemberID.DataPropertyName = "MemberID";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Blue;
-            this.MemberID.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Blue;
+            this.MemberID.DefaultCellStyle = dataGridViewCellStyle19;
             this.MemberID.HeaderText = "ID Number";
             this.MemberID.MaxInputLength = 10;
             this.MemberID.Name = "MemberID";
@@ -1016,6 +785,237 @@ namespace SamecProject
             this.EmailAddress.Name = "EmailAddress";
             this.EmailAddress.ReadOnly = true;
             // 
+            // pnlMaintenance
+            // 
+            this.pnlMaintenance.Controls.Add(this.tabUser);
+            this.pnlMaintenance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlMaintenance.Location = new System.Drawing.Point(10, 45);
+            this.pnlMaintenance.Name = "pnlMaintenance";
+            this.pnlMaintenance.Size = new System.Drawing.Size(1119, 465);
+            this.pnlMaintenance.TabIndex = 8;
+            // 
+            // tabUser
+            // 
+            this.tabUser.Controls.Add(this.tabMaintenanceUser);
+            this.tabUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabUser.Location = new System.Drawing.Point(22, 16);
+            this.tabUser.Name = "tabUser";
+            this.tabUser.SelectedIndex = 0;
+            this.tabUser.Size = new System.Drawing.Size(1080, 430);
+            this.tabUser.TabIndex = 0;
+            // 
+            // tabMaintenanceUser
+            // 
+            this.tabMaintenanceUser.BackColor = System.Drawing.Color.Beige;
+            this.tabMaintenanceUser.Controls.Add(this.btnUDelete);
+            this.tabMaintenanceUser.Controls.Add(this.btnUserSave);
+            this.tabMaintenanceUser.Controls.Add(this.txtUConfirm);
+            this.tabMaintenanceUser.Controls.Add(this.label5);
+            this.tabMaintenanceUser.Controls.Add(this.txtUPassword);
+            this.tabMaintenanceUser.Controls.Add(this.label4);
+            this.tabMaintenanceUser.Controls.Add(this.txtUname);
+            this.tabMaintenanceUser.Controls.Add(this.label3);
+            this.tabMaintenanceUser.Controls.Add(this.dgvUsers);
+            this.tabMaintenanceUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabMaintenanceUser.Location = new System.Drawing.Point(4, 25);
+            this.tabMaintenanceUser.Name = "tabMaintenanceUser";
+            this.tabMaintenanceUser.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMaintenanceUser.Size = new System.Drawing.Size(1072, 401);
+            this.tabMaintenanceUser.TabIndex = 0;
+            this.tabMaintenanceUser.Text = "User Maintenance";
+            // 
+            // btnUDelete
+            // 
+            this.btnUDelete.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnUDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUDelete.ForeColor = System.Drawing.Color.White;
+            this.btnUDelete.Location = new System.Drawing.Point(428, 196);
+            this.btnUDelete.Name = "btnUDelete";
+            this.btnUDelete.Size = new System.Drawing.Size(103, 28);
+            this.btnUDelete.TabIndex = 16;
+            this.btnUDelete.Text = "Delete";
+            this.btnUDelete.UseVisualStyleBackColor = false;
+            this.btnUDelete.Click += new System.EventHandler(this.btnUDelete_Click);
+            // 
+            // btnUserSave
+            // 
+            this.btnUserSave.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnUserSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserSave.ForeColor = System.Drawing.Color.White;
+            this.btnUserSave.Location = new System.Drawing.Point(326, 195);
+            this.btnUserSave.Name = "btnUserSave";
+            this.btnUserSave.Size = new System.Drawing.Size(96, 28);
+            this.btnUserSave.TabIndex = 15;
+            this.btnUserSave.Text = "Save";
+            this.btnUserSave.UseVisualStyleBackColor = false;
+            this.btnUserSave.Click += new System.EventHandler(this.btnUserSave_Click);
+            // 
+            // txtUConfirm
+            // 
+            this.txtUConfirm.BackColor = System.Drawing.Color.White;
+            this.txtUConfirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUConfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUConfirm.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtUConfirm.Location = new System.Drawing.Point(326, 151);
+            this.txtUConfirm.MaxLength = 20;
+            this.txtUConfirm.Name = "txtUConfirm";
+            this.txtUConfirm.Size = new System.Drawing.Size(205, 27);
+            this.txtUConfirm.TabIndex = 14;
+            this.txtUConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUConfirm.UseSystemPasswordChar = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(323, 132);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(135, 16);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Confirm Password : ";
+            // 
+            // txtUPassword
+            // 
+            this.txtUPassword.BackColor = System.Drawing.Color.White;
+            this.txtUPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUPassword.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtUPassword.Location = new System.Drawing.Point(326, 100);
+            this.txtUPassword.MaxLength = 20;
+            this.txtUPassword.Name = "txtUPassword";
+            this.txtUPassword.Size = new System.Drawing.Size(205, 27);
+            this.txtUPassword.TabIndex = 13;
+            this.txtUPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUPassword.UseSystemPasswordChar = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(323, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 16);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Password : ";
+            // 
+            // txtUname
+            // 
+            this.txtUname.BackColor = System.Drawing.Color.White;
+            this.txtUname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUname.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtUname.Location = new System.Drawing.Point(326, 46);
+            this.txtUname.MaxLength = 20;
+            this.txtUname.Name = "txtUname";
+            this.txtUname.Size = new System.Drawing.Size(205, 27);
+            this.txtUname.TabIndex = 12;
+            this.txtUname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(323, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Username : ";
+            // 
+            // dgvUsers
+            // 
+            this.dgvUsers.AllowUserToAddRows = false;
+            this.dgvUsers.AllowUserToDeleteRows = false;
+            this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.dgvUsers.ColumnHeadersHeight = 30;
+            this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UserName,
+            this.UserID});
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle24;
+            this.dgvUsers.EnableHeadersVisualStyles = false;
+            this.dgvUsers.GridColor = System.Drawing.Color.LightGray;
+            this.dgvUsers.Location = new System.Drawing.Point(24, 27);
+            this.dgvUsers.Name = "dgvUsers";
+            this.dgvUsers.ReadOnly = true;
+            this.dgvUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            this.dgvUsers.RowHeadersVisible = false;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.RowsDefaultCellStyle = dataGridViewCellStyle26;
+            this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsers.Size = new System.Drawing.Size(269, 344);
+            this.dgvUsers.TabIndex = 8;
+            this.dgvUsers.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUsers_CellMouseClick);
+            // 
+            // UserName
+            // 
+            this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.UserName.DataPropertyName = "UserName";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Blue;
+            this.UserName.DefaultCellStyle = dataGridViewCellStyle23;
+            this.UserName.HeaderText = "User Name";
+            this.UserName.MaxInputLength = 10;
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            this.UserName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // UserID
+            // 
+            this.UserID.DataPropertyName = "UserID";
+            this.UserID.HeaderText = "UserID";
+            this.UserID.Name = "UserID";
+            this.UserID.ReadOnly = true;
+            this.UserID.Visible = false;
+            // 
+            // pnlHome
+            // 
+            this.pnlHome.Controls.Add(this.pictureBox3);
+            this.pnlHome.Location = new System.Drawing.Point(10, 48);
+            this.pnlHome.Name = "pnlHome";
+            this.pnlHome.Size = new System.Drawing.Size(1119, 466);
+            this.pnlHome.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(304, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(481, 426);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "MemberID";
@@ -1083,7 +1083,7 @@ namespace SamecProject
             // 
             this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn9.DataPropertyName = "PaymentDesc";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Type";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Payment Type";
             this.dataGridViewTextBoxColumn9.MaxInputLength = 50;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.ReadOnly = true;
@@ -1127,6 +1127,10 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlMenu.ResumeLayout(false);
+            this.pnlPayment.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
+            this.pnlMember.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.pnlMaintenance.ResumeLayout(false);
             this.tabUser.ResumeLayout(false);
             this.tabMaintenanceUser.ResumeLayout(false);
@@ -1134,10 +1138,6 @@ namespace SamecProject
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
             this.pnlHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlPayment.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
-            this.pnlMember.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.ResumeLayout(false);
 
         }
