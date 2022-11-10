@@ -143,7 +143,7 @@ namespace SamecProject
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There was an error retrieving the member ?", "Error");
+                    MessageBox.Show(ex.Message, "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
