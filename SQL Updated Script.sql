@@ -280,3 +280,52 @@ BEGIN
 	   UPDATE tblUsers SET IsActive = 0 WHERE Username = @UserName
 END
 
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('SearchPayments'))
+   EXEC ('CREATE PROCEDURE SearchPayments AS BEGIN SET NOCOUNT ON; END')
+GO
+
+ALTER PROCEDURE [dbo].[SearchPayments](@StringSearch nvarchar(50),@SearchType char(3)) 	
+AS
+BEGIN
+	
+	SET NOCOUNT ON;
+	
+	DECLARE @tblSearch TABLE(strSearch nvarchar(50), Ident smallint)
+	DECLARE @tempSearchResults TABLE(PaymentID char(10),MemberID char(10),Lastname nvarchar(50),FirstName nvarchar(50),PaymentYear char(5),
+				PaymentMonth nvarchar(10),PaymentAmount nvarchar(20),Paymentdate nvarchar(20),PaymentDesc nvarchar(100))
+	DECLARE @sqlQuery nvarchar(max),@refSearch nvarchar(50)
+	DECLARE @refL smallint = 1
+	SET @SearchType = IIF(ISNULL(@SearchType,'')='','OR',@SearchType)
+	INSERT INTO @tblSearch
+	SELECT LTRIM(RTRIM((VALUE))),ROW_NUMBER() OVER(ORDER BY value) FROM string_split(@StringSearch,'+')
+
+	WHILE EXISTS(SELECT 1 FROM @tblSearch)
+		BEGIN
+			 SET @refSearch =  (SELECT '%' + strSearch + '%' FROM @tblSearch WHERE Ident=@refL)	
+			 
+			 IF (@SearchType = 'OR' OR @refL=1 )			    
+			    BEGIN				
+					INSERT INTO @tempSearchResults
+					SELECT a.PaymentID,a.MemberID,b.Lastname,b.Firstname,a.PaymentYear
+						,PaymentMonth=DATENAME(MONTH, DATEADD(MONTH, ISNULL(a.PaymentMonth,1), '2020-12-01'))
+						,a.PaymentAmount,a.Paymentdate,c.PaymentDesc
+					FROM tblPayment a INNER JOIN tblMembers b ON a.MemberID = b.MemberID 
+						LEFT JOIN tblPaymentType c ON a.PaymentTypeID = c.PaymentTypeID
+					WHERE CAST(a.MemberID as nvarchar(20))+b.Lastname+b.Firstname+c.PaymentDesc+CAST(a.PaymentYear as char(4)) LIKE @refSearch
+						OR DATENAME(MONTH, DATEADD(MONTH, ISNULL(a.PaymentMonth,1), '2020-12-01')) LIKE @refSearch
+			            OR LOWER(@refSearch) = '%all%'			
+				END	
+			ELSE IF (@SearchType = 'AND' AND @refL>1 )
+			    BEGIN
+					DELETE FROM @tempSearchResults
+					WHERE MemberID+Lastname+FirstName+PaymentDesc+PaymentYear+PaymentMonth NOT LIKE @refSearch
+				END
+			DELETE FROM @tblSearch WHERE Ident = @refL
+			SET @refL += 1
+		END
+	SELECT DISTINCT a.PaymentID,a.MemberID,a.Lastname,a.Firstname,a.PaymentYear
+ 		  ,a.PaymentMonth,a.PaymentAmount,a.Paymentdate,a.PaymentDesc
+	FROM @tempSearchResults a
+	
+END
+

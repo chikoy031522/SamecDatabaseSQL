@@ -282,10 +282,16 @@ namespace SamecProject
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(ds);
                 conn.Close();
-                dgvPayments.ReadOnly = true;
-                dgvPayments.DataSource = ds.Tables[0];
-                dgvPayments.ClearSelection();
+                DGPaymentDataBound(ds);
+                
             }
+        }
+
+        public void DGPaymentDataBound(DataSet ds)
+        {
+            dgvPayments.ReadOnly = true;
+            dgvPayments.DataSource = ds.Tables[0];
+            dgvPayments.ClearSelection();
         }
 
         private void btnPaymentEdit_Click(object sender, EventArgs e)
@@ -387,6 +393,14 @@ namespace SamecProject
                     
                 }
             }
+        }
+
+        private void btnPaymentSearch_Click(object sender, EventArgs e)
+        {
+            
+            frmPaymentSearch frs = new frmPaymentSearch(this);
+            frs.ShowDialog();
+                        
         }
     }
 }
