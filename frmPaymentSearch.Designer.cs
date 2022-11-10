@@ -42,12 +42,11 @@ namespace SamecProject
             this.txtStringSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStringSearch.ForeColor = System.Drawing.Color.Black;
             this.txtStringSearch.Location = new System.Drawing.Point(76, 39);
-            this.txtStringSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtStringSearch.MaxLength = 20;
+            this.txtStringSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStringSearch.MaxLength = 100;
             this.txtStringSearch.Name = "txtStringSearch";
             this.txtStringSearch.Size = new System.Drawing.Size(242, 27);
             this.txtStringSearch.TabIndex = 18;
-            this.txtStringSearch.TextChanged += new System.EventHandler(this.txtStringSearch_TextChanged);
             // 
             // label7
             // 
@@ -68,7 +67,7 @@ namespace SamecProject
             this.btnPaymentSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaymentSearch.ForeColor = System.Drawing.Color.White;
             this.btnPaymentSearch.Location = new System.Drawing.Point(326, 40);
-            this.btnPaymentSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPaymentSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnPaymentSearch.Name = "btnPaymentSearch";
             this.btnPaymentSearch.Size = new System.Drawing.Size(71, 27);
             this.btnPaymentSearch.TabIndex = 19;
@@ -89,7 +88,6 @@ namespace SamecProject
             this.cmbSearchType.Name = "cmbSearchType";
             this.cmbSearchType.Size = new System.Drawing.Size(57, 25);
             this.cmbSearchType.TabIndex = 20;
-            this.cmbSearchType.SelectedIndexChanged += new System.EventHandler(this.cmbPaymentType_SelectedIndexChanged);
             // 
             // frmPaymentSearch
             // 
@@ -104,7 +102,7 @@ namespace SamecProject
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPaymentSearch";
