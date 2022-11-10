@@ -32,7 +32,7 @@ namespace SamecProject
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPaymentSearch));
             this.txtStringSearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnPaymentSearch = new System.Windows.Forms.Button();
+            this.btnPaySearch = new System.Windows.Forms.Button();
             this.cmbSearchType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -60,20 +60,20 @@ namespace SamecProject
             this.label7.TabIndex = 17;
             this.label7.Text = "Search For : ";
             // 
-            // btnPaymentSearch
+            // btnPaySearch
             // 
-            this.btnPaymentSearch.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnPaymentSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaymentSearch.ForeColor = System.Drawing.Color.White;
-            this.btnPaymentSearch.Location = new System.Drawing.Point(326, 40);
-            this.btnPaymentSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPaymentSearch.Name = "btnPaymentSearch";
-            this.btnPaymentSearch.Size = new System.Drawing.Size(71, 27);
-            this.btnPaymentSearch.TabIndex = 19;
-            this.btnPaymentSearch.Text = "Go";
-            this.btnPaymentSearch.UseVisualStyleBackColor = false;
-            this.btnPaymentSearch.Click += new System.EventHandler(this.btnPaymentSearch_Click);
+            this.btnPaySearch.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnPaySearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaySearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaySearch.ForeColor = System.Drawing.Color.White;
+            this.btnPaySearch.Location = new System.Drawing.Point(326, 40);
+            this.btnPaySearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPaySearch.Name = "btnPaySearch";
+            this.btnPaySearch.Size = new System.Drawing.Size(71, 27);
+            this.btnPaySearch.TabIndex = 19;
+            this.btnPaySearch.Text = "Go";
+            this.btnPaySearch.UseVisualStyleBackColor = false;
+            this.btnPaySearch.Click += new System.EventHandler(this.btnPaySearch_Click);
             // 
             // cmbSearchType
             // 
@@ -96,7 +96,7 @@ namespace SamecProject
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(416, 93);
             this.Controls.Add(this.cmbSearchType);
-            this.Controls.Add(this.btnPaymentSearch);
+            this.Controls.Add(this.btnPaySearch);
             this.Controls.Add(this.txtStringSearch);
             this.Controls.Add(this.label7);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,7 +117,7 @@ namespace SamecProject
 
         private System.Windows.Forms.TextBox txtStringSearch;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnPaymentSearch;
+        private System.Windows.Forms.Button btnPaySearch;
         private System.Windows.Forms.ComboBox cmbSearchType;
     }
 }

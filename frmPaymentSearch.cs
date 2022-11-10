@@ -38,14 +38,12 @@ namespace SamecProject
             }
         }
 
-        private void btnPaymentSearch_Click(object sender, EventArgs e)
+        private void btnPaySearch_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtStringSearch.Text))
             {
-                SearchPayments(txtStringSearch.Text,cmbSearchType.Text);
+                SearchPayments(txtStringSearch.Text, cmbSearchType.Text);
             }
         }
-
-       
     }
 }

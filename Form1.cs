@@ -13,7 +13,7 @@ using System.IO;
 using Microsoft.Reporting.WinForms;
 
 namespace SamecProject
-{    
+{
     public partial class frmMain : Form
     {
 
@@ -25,9 +25,9 @@ namespace SamecProject
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            SQLStringConnect();            
+            SQLStringConnect();
         }
-      
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtUsername.Text) && !string.IsNullOrEmpty(txtPassword.Text))
@@ -35,22 +35,24 @@ namespace SamecProject
                 bool logSuccess = ValidateUser(txtUsername.Text, txtPassword.Text);
                 if (logSuccess)
                 {
-                    using(StreamWriter strWriter = new StreamWriter("DefaultUser.txt"))
+                    using (StreamWriter strWriter = new StreamWriter("DefaultUser.txt"))
                     {
                         strWriter.WriteLine(txtUsername.Text);
                     }
-                    lblUsernameLogin.Text = txtUsername.Text;                    
+                    lblUsernameLogin.Text = txtUsername.Text;
                     txtPassword.Text = "";
                     GetSetClass.globalString = txtUsername.Text;
                     btnMaintenance.Visible = (txtUsername.Text == "Administrator") ? true : false;
-                    btnHome_Click(sender,e);
+                    btnHome_Click(sender, e);
                     pnlBody.Visible = true;
-                } else
+                }
+                else
                 {
                     lblLoginError.Text = "Invalid credentials ? Make sure to enter correct username and paswword ";
                     lblLoginError.Visible = true;
                 }
-            } else
+            }
+            else
             {
                 lblLoginError.Text = "Please enter username and password ? ";
                 lblLoginError.Visible = true;
@@ -96,19 +98,19 @@ namespace SamecProject
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnLogin_Click(sender,e);
+                btnLogin_Click(sender, e);
             }
         }
 
         private void btnMember_Click(object sender, EventArgs e)
         {
             btnMemberRefresh_Click(sender, e);
-            pnlMember.Visible = true;            
+            pnlMember.Visible = true;
             pnlMember.BringToFront();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
-        {                        
+        {
             pnlHome.BringToFront();
         }
 
@@ -121,13 +123,13 @@ namespace SamecProject
         {
             SetInitialValue("add");
             frmMember addMem = new frmMember();
-            addMem.Text += " - Add"; 
+            addMem.Text += " - Add";
             addMem.ShowDialog();
         }
 
         public void btnMemberRefresh_Click(object sender, EventArgs e)
         {
-            using(SqlConnection conn = new SqlConnection(SQLConnStr))
+            using (SqlConnection conn = new SqlConnection(SQLConnStr))
             {
                 SqlCommand cmd = new SqlCommand("GetMembers");
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -142,7 +144,7 @@ namespace SamecProject
                 dgvMembers.ClearSelection();
             }
         }
-        
+
         private void btnMemberEdit_Click(object sender, EventArgs e)
         {
             if (dgvMembers.SelectedRows.Count > 0)
@@ -152,7 +154,7 @@ namespace SamecProject
                 editMem.Text += " - Edit";
                 editMem.ShowDialog();
             }
-                                                
+
         }
         public void SetInitialValue(string st)
         {
@@ -186,7 +188,7 @@ namespace SamecProject
                         conn.Close();
                         btnMemberRefresh_Click(sender, e);
                     }
-                }                
+                }
 
             }
 
@@ -203,7 +205,7 @@ namespace SamecProject
         private void btnPayment_Click(object sender, EventArgs e)
         {
             btnPaymentRefresh_Click(sender, e);
-            pnlPayment.Visible = true;            
+            pnlPayment.Visible = true;
             pnlPayment.BringToFront();
         }
 
@@ -243,7 +245,8 @@ namespace SamecProject
                     SQLConnStr = GetSetClass.sqlconnectstring;
                     txtPassword.Select();
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show("Create a text for the database name to properly connect to SQL and run the app ?", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -255,7 +258,7 @@ namespace SamecProject
                     txtPassword.Focus();
 
                 }
-            }            
+            }
         }
 
         private void btnPaymentType_Click(object sender, EventArgs e)
@@ -283,23 +286,15 @@ namespace SamecProject
                 da.Fill(ds);
                 conn.Close();
                 DGPaymentDataBound(ds);
-                
             }
-        }
-
-        public void DGPaymentDataBound(DataSet ds)
-        {
-            dgvPayments.ReadOnly = true;
-            dgvPayments.DataSource = ds.Tables[0];
-            dgvPayments.ClearSelection();
         }
 
         private void btnPaymentEdit_Click(object sender, EventArgs e)
         {
-            if(dgvPayments.SelectedRows.Count > 0)
+            if (dgvPayments.SelectedRows.Count > 0)
             {
                 string payID = dgvPayments.SelectedRows[0].Cells[0].Value.ToString();
-                frmPayment frp = new frmPayment(payID);                
+                frmPayment frp = new frmPayment(payID);
                 frp.ShowDialog();
             }
         }
@@ -320,7 +315,7 @@ namespace SamecProject
                         conn.Open();
                         cmd.ExecuteNonQuery();
                         conn.Close();
-                        dgvPayments.Rows.RemoveAt(dgvPayments.SelectedRows[0].Index);                        
+                        dgvPayments.Rows.RemoveAt(dgvPayments.SelectedRows[0].Index);
                     }
                 }
 
@@ -330,31 +325,31 @@ namespace SamecProject
         private void btnMemberPrint_Click(object sender, EventArgs e)
         {
             ReportDataSource rds = new ReportDataSource("Members", dgvMembers.DataSource);
-            frmReports repmem = new frmReports(rds,"Members");
+            frmReports repmem = new frmReports(rds, "Members");
             repmem.ShowDialog();
         }
 
         private void btnPaymentReport_Click(object sender, EventArgs e)
         {
             ReportDataSource rds = new ReportDataSource("Payments", dgvPayments.DataSource);
-            frmReports reppay = new frmReports(rds,"Payments");            
+            frmReports reppay = new frmReports(rds, "Payments");
             reppay.ShowDialog();
         }
 
         private void btnUserSave_Click(object sender, EventArgs e)
         {
-            if(txtUname.Text != "" && txtUPassword.Text != "" && txtUConfirm.Text != "" && txtUPassword.Text == txtUConfirm.Text)
+            if (txtUname.Text != "" && txtUPassword.Text != "" && txtUConfirm.Text != "" && txtUPassword.Text == txtUConfirm.Text)
             {
-                using(SqlConnection conn=new SqlConnection(GetSetClass.sqlconnectstring))
+                using (SqlConnection conn = new SqlConnection(GetSetClass.sqlconnectstring))
                 {
                     SqlCommand cmd = new SqlCommand("AddUpdateUser", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@Username", txtUname.Text);
-                    cmd.Parameters.AddWithValue("@Password", txtUConfirm.Text);                    
+                    cmd.Parameters.AddWithValue("@Password", txtUConfirm.Text);
                     conn.Open();
                     cmd.ExecuteNonQuery();
                     conn.Close();
-                    txtUConfirm.Text = "";txtUPassword.Text = "";
+                    txtUConfirm.Text = ""; txtUPassword.Text = "";
                     GetUsers();
                     MessageBox.Show("User data had been successfully save !!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -366,7 +361,7 @@ namespace SamecProject
         {
             if (!string.IsNullOrEmpty(txtUname.Text) && txtUname.Text != "Administrator")
             {
-                DialogResult res = MessageBox.Show("Are you sure you want to remove " + txtUname.Text + " ?" , "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show("Are you sure you want to remove " + txtUname.Text + " ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (res == DialogResult.Yes)
                 {
                     try
@@ -385,14 +380,26 @@ namespace SamecProject
                         }
 
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                   
-                    
+
+
                 }
             }
+        }
+
+        public void DGPaymentDataBound(DataSet ds)
+        {
+            dgvPayments.ReadOnly = true;
+            dgvPayments.DataSource = ds.Tables[0];
+            dgvPayments.ClearSelection();
+        }
+        private void btnPaymentSearch_Click(object sender, EventArgs e)
+        {
+            frmPaymentSearch frs = new frmPaymentSearch(this);
+            frs.ShowDialog();
         }
     }
 }
