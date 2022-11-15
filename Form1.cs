@@ -61,21 +61,28 @@ namespace SamecProject
 
         private bool ValidateUser(string username, string userpassword)
         {
-            bool isUserExist = false;
-            using (SqlConnection sqlConn = new SqlConnection(SQLConnStr))
+            try
             {
-                SqlCommand cmd = new SqlCommand("CheckUserExist");
-                cmd.Parameters.AddWithValue("@UserName", username);
-                cmd.Parameters.AddWithValue("@Password", userpassword);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Connection = sqlConn;
-                sqlConn.Open();
-                DataSet ds = new DataSet();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(ds);
-                sqlConn.Close();
-                isUserExist = ((ds.Tables.Count > 0) && (ds.Tables[0].Rows.Count > 0));
+                bool isUserExist = false;
+                using (SqlConnection sqlConn = new SqlConnection(SQLConnStr))
+                {
+                    SqlCommand cmd = new SqlCommand("CheckUserExist");
+                    cmd.Parameters.AddWithValue("@UserName", username);
+                    cmd.Parameters.AddWithValue("@Password", userpassword);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Connection = sqlConn;
+                    sqlConn.Open();
+                    DataSet ds = new DataSet();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(ds);
+                    sqlConn.Close();
+                    isUserExist = ((ds.Tables.Count > 0) && (ds.Tables[0].Rows.Count > 0));
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
 
             return isUserExist;
         }
