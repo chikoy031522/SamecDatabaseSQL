@@ -1,0 +1,1 @@
+﻿Data Source=.;AttachDBFileName=|DataDirectory|\Data\SamecDatabase.mdf;Initial Catalog=SamecDatabase;Integrated Security=True
