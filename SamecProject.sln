@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamecProject", "SamecProject.csproj", "{714F0AF5-850A-45E5-9946-57AED1AC2B7C}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SamecSetup", "SamecSetup\SamecSetup.vdproj", "{28941515-F674-4584-AAD9-1960C3767070}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{714F0AF5-850A-45E5-9946-57AED1AC2B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{714F0AF5-850A-45E5-9946-57AED1AC2B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{714F0AF5-850A-45E5-9946-57AED1AC2B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28941515-F674-4584-AAD9-1960C3767070}.Debug|Any CPU.ActiveCfg = Release
+		{28941515-F674-4584-AAD9-1960C3767070}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

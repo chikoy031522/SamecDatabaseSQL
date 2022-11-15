@@ -33,10 +33,10 @@ namespace SamecProject
             rptViewer.LocalReport.DataSources.Clear();
             if (tabletype == "Payments")
             {
-                rptViewer.LocalReport.ReportPath = "../../rptPayments.rdlc";
+                rptViewer.LocalReport.ReportPath = "rptPayments.rdlc";
             } else
             {
-                rptViewer.LocalReport.ReportPath = "../../rptMembers.rdlc";
+                rptViewer.LocalReport.ReportPath = "rptMembers.rdlc";
             }            
             rptViewer.LocalReport.DataSources.Add(rds);
             this.rptViewer.RefreshReport();
