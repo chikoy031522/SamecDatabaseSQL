@@ -165,6 +165,7 @@
     <Content Include="Images\samec logo.jpg" />
     <Content Include="Images\samec logo1.jpg" />
     <Content Include="Images\user-login-png-transparent-6-Transparent-Images.png" />
+    <Content Include="sqlconnectionstring.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

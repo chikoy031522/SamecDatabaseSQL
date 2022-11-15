@@ -1,0 +1,1 @@
+﻿Data Source=Carias2021;Initial Catalog=SamecDatabase;Integrated Security=True
