@@ -36,7 +36,7 @@
     <StartupObject>SamecProject.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>5016521.ico</ApplicationIcon>
+    <ApplicationIcon>Images\5016521.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -155,10 +155,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\" />
     <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="5016521.ico" />
+    <Content Include="Images\5016521.ico" />
     <Content Include="Images\IMG_4560.png" />
     <Content Include="Images\kisspng-computer-icons-password-portable-network-graphics-user-dashboard-5c57ecf8a47e61.7758533815492661686738.jpg" />
     <Content Include="Images\Ok-icon.png" />
