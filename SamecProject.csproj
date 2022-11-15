@@ -129,7 +129,7 @@
     <EmbeddedResource Include="frmReports.resx">
       <DependentUpon>frmReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptPayments.rdlc" />
+    <EmbeddedResource Include="Reports\rptPayments.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -139,7 +139,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="rptMembers.rdlc" />
+    <EmbeddedResource Include="Reports\rptMembers.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
