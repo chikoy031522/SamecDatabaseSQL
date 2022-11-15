@@ -436,12 +436,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_18BFC79F9421F81E34226092421F23DD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_EAC08487AE7D4939B98B3EC115C114DE"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -529,6 +523,12 @@
         "OwnerKey" = "8:_63A0F610CA22256C2C0FCE092D2B71E6"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_18BFC79F9421F81E34226092421F23DD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -547,6 +547,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -1826,7 +1834,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Samec Setup"
+        "ProductName" = "8:Samec App"
         "ProductCode" = "8:{FB719B45-3790-4F56-8A14-1BCD02F99FED}"
         "PackageCode" = "8:{CB698D3C-85BD-4E1B-9B8D-66FE7BC2F6E6}"
         "UpgradeCode" = "8:{B9E975BF-B10C-42B8-BF6D-6EFC9238C800}"
@@ -1839,7 +1847,7 @@
         "Manufacturer" = "8:Rigor Software Solution"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Samec Setup"
+        "Title" = "8:Samec App"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Chris Rigor"
         "Keywords" = "8:"
