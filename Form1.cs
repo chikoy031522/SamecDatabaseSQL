@@ -61,9 +61,9 @@ namespace SamecProject
 
         private bool ValidateUser(string username, string userpassword)
         {
+            bool isUserExist = false;
             try
-            {
-                bool isUserExist = false;
+            {                
                 using (SqlConnection sqlConn = new SqlConnection(SQLConnStr))
                 {
                     SqlCommand cmd = new SqlCommand("CheckUserExist");
