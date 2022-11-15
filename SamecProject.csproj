@@ -141,32 +141,6 @@
     </Compile>
     <EmbeddedResource Include="rptMembers.rdlc" />
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\frmMain.datasource" />
-    <None Include="Properties\DataSources\frmMember.datasource" />
-    <None Include="Properties\DataSources\frmPayment.datasource" />
-    <None Include="Properties\DataSources\frmPaymentType.datasource" />
-    <None Include="Properties\DataSources\frmReports.datasource" />
-    <None Include="Properties\DataSources\GetSetClass.datasource" />
-    <None Include="Properties\DataSources\Program.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet.GetMembersDataTable.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet.GetMembersRow.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet.GetMembersRowChangeEvent.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet.GetMembersRowChangeEventHandler.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet1.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet1.GetPaymentsDataTable.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet1.GetPaymentsRow.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet1.GetPaymentsRowChangeEvent.datasource" />
-    <None Include="Properties\DataSources\SamecDatabaseDataSet1.GetPaymentsRowChangeEventHandler.datasource" />
-    <None Include="Properties\DataSources\SamecProject.Properties.Resources.datasource" />
-    <None Include="Properties\DataSources\SamecProject.Properties.Settings.datasource" />
-    <None Include="Properties\DataSources\SamecProject.SamecDatabaseDataSet1TableAdapters.GetPaymentsTableAdapter.datasource" />
-    <None Include="Properties\DataSources\SamecProject.SamecDatabaseDataSet1TableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
-    <None Include="Properties\DataSources\SamecProject.SamecDatabaseDataSet1TableAdapters.TableAdapterManager.datasource" />
-    <None Include="Properties\DataSources\SamecProject.SamecDatabaseDataSetTableAdapters.GetMembersTableAdapter.datasource" />
-    <None Include="Properties\DataSources\SamecProject.SamecDatabaseDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
-    <None Include="Properties\DataSources\SamecProject.SamecDatabaseDataSetTableAdapters.TableAdapterManager.datasource" />
-    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -180,7 +154,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="5016521.ico" />
     <Content Include="Images\IMG_4560.png" />

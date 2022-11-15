@@ -235,20 +235,28 @@ namespace SamecProject
 
         public void SQLStringConnect()
         {
-            if (File.Exists("servername.txt"))
+            if (File.Exists("sqlconnectionstring.txt"))
             {
-                using (StreamReader strReader = new StreamReader("servername.txt"))
+                try
                 {
-                    string dbname = strReader.ReadLine();
-                    string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
-                    GetSetClass.sqlconnectstring = strConn.Replace("servername", dbname);
-                    SQLConnStr = GetSetClass.sqlconnectstring;
-                    txtPassword.Select();
+                    using (StreamReader strReader = new StreamReader("sqlconnectionstring.txt"))
+                    {
+                        string sqlconnectfromtxtfile = strReader.ReadLine();
+                        //string strConn = ConfigurationManager.ConnectionStrings["SQLSamecConnection"].ConnectionString;
+                        //GetSetClass.sqlconnectstring = strConn.Replace("servername", dbname);
+                        GetSetClass.sqlconnectstring = sqlconnectfromtxtfile;
+                        SQLConnStr = GetSetClass.sqlconnectstring;
+                        txtPassword.Select();
+                    }
+                } catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "SQL Connect Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                
             }
             else
             {
-                MessageBox.Show("Create a text for the database name to properly connect to SQL and run the app ?", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Create a sqlconnectionstring.txt and put the correct SQL connection ?", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             if (File.Exists("DefaultUser.txt"))
             {
